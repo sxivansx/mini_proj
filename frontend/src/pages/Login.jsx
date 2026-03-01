@@ -9,9 +9,6 @@ export default function Login() {
           <Link to="/" aria-label="home" className="flex items-center gap-2 font-bold tracking-tight">
             <span className="text-foreground">dev</span>
             <span className="text-primary">path</span>
-            <span className="ml-1 rounded border border-primary/30 bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-primary">
-              beta
-            </span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-center">
