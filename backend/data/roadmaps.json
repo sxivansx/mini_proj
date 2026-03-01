@@ -1,0 +1,479 @@
+[
+  {
+    "id": "web-development",
+    "title": "Web Development",
+    "description": "Master full-stack web development from HTML basics to advanced frameworks and deployment.",
+    "icon": "🌐",
+    "color": "#3B82F6",
+    "level": "Beginner to Advanced",
+    "duration": "6-12 months",
+    "stages": [
+      {
+        "id": "web-1",
+        "title": "HTML & CSS Fundamentals",
+        "description": "Learn the building blocks of the web. Understand semantic HTML, CSS box model, flexbox, grid, and responsive design.",
+        "order": 1,
+        "resources": [
+          { "title": "MDN Web Docs - HTML", "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML", "type": "documentation" },
+          { "title": "MDN Web Docs - CSS", "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS", "type": "documentation" },
+          { "title": "freeCodeCamp - Responsive Web Design", "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/", "type": "course" },
+          { "title": "CSS-Tricks Complete Guide to Flexbox", "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/", "type": "tutorial" }
+        ],
+        "certifications": [
+          { "title": "freeCodeCamp Responsive Web Design", "provider": "freeCodeCamp", "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/", "free": true }
+        ]
+      },
+      {
+        "id": "web-2",
+        "title": "JavaScript Essentials",
+        "description": "Master JavaScript fundamentals — variables, functions, DOM manipulation, events, async/await, and ES6+ features.",
+        "order": 2,
+        "resources": [
+          { "title": "javascript.info - The Modern JavaScript Tutorial", "url": "https://javascript.info/", "type": "tutorial" },
+          { "title": "MDN JavaScript Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide", "type": "documentation" },
+          { "title": "freeCodeCamp - JavaScript Algorithms", "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/", "type": "course" },
+          { "title": "Eloquent JavaScript (free book)", "url": "https://eloquentjavascript.net/", "type": "book" }
+        ],
+        "certifications": [
+          { "title": "freeCodeCamp JavaScript Algorithms & DS", "provider": "freeCodeCamp", "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/", "free": true }
+        ]
+      },
+      {
+        "id": "web-3",
+        "title": "Version Control with Git",
+        "description": "Learn Git for source control — branching, merging, pull requests, and collaboration workflows on GitHub.",
+        "order": 3,
+        "resources": [
+          { "title": "Pro Git Book (free)", "url": "https://git-scm.com/book/en/v2", "type": "book" },
+          { "title": "GitHub Skills", "url": "https://skills.github.com/", "type": "course" },
+          { "title": "Learn Git Branching (interactive)", "url": "https://learngitbranching.js.org/", "type": "tutorial" }
+        ],
+        "certifications": [
+          { "title": "GitHub Foundations", "provider": "GitHub", "url": "https://examregistration.github.com/certification/GHF", "free": false }
+        ]
+      },
+      {
+        "id": "web-4",
+        "title": "React.js",
+        "description": "Build dynamic UIs with React — components, hooks, state management, React Router, and modern patterns.",
+        "order": 4,
+        "resources": [
+          { "title": "React Official Docs", "url": "https://react.dev/", "type": "documentation" },
+          { "title": "Scrimba React Course", "url": "https://scrimba.com/learn/learnreact", "type": "course" },
+          { "title": "React Tutorial for Beginners - Codevolution", "url": "https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3", "type": "video" }
+        ],
+        "certifications": [
+          { "title": "Meta Front-End Developer Certificate", "provider": "Coursera / Meta", "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer", "free": false }
+        ]
+      },
+      {
+        "id": "web-5",
+        "title": "Node.js & Express Backend",
+        "description": "Build server-side applications with Node.js and Express — REST APIs, middleware, authentication, and file handling.",
+        "order": 5,
+        "resources": [
+          { "title": "Node.js Official Docs", "url": "https://nodejs.org/en/docs", "type": "documentation" },
+          { "title": "Express.js Official Guide", "url": "https://expressjs.com/en/guide/routing.html", "type": "documentation" },
+          { "title": "The Odin Project - NodeJS", "url": "https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "OpenJS Node.js Application Developer (JSNAD)", "provider": "OpenJS Foundation", "url": "https://training.linuxfoundation.org/certification/jsnad/", "free": false }
+        ]
+      },
+      {
+        "id": "web-6",
+        "title": "Databases & Deployment",
+        "description": "Learn SQL and NoSQL databases (PostgreSQL, MongoDB), and deploy apps using services like Vercel, Railway, or AWS.",
+        "order": 6,
+        "resources": [
+          { "title": "MongoDB University (free courses)", "url": "https://learn.mongodb.com/", "type": "course" },
+          { "title": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/", "type": "tutorial" },
+          { "title": "Vercel Deployment Guide", "url": "https://vercel.com/docs", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "MongoDB Associate Developer", "provider": "MongoDB", "url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam", "free": false },
+          { "title": "AWS Certified Developer - Associate", "provider": "AWS", "url": "https://aws.amazon.com/certification/certified-developer-associate/", "free": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "data-science",
+    "title": "Data Science",
+    "description": "From statistics and Python to machine learning models and data storytelling.",
+    "icon": "📊",
+    "color": "#10B981",
+    "level": "Beginner to Advanced",
+    "duration": "8-14 months",
+    "stages": [
+      {
+        "id": "ds-1",
+        "title": "Python for Data Science",
+        "description": "Master Python basics, NumPy, Pandas, and Matplotlib for data manipulation and visualization.",
+        "order": 1,
+        "resources": [
+          { "title": "Python Official Tutorial", "url": "https://docs.python.org/3/tutorial/", "type": "documentation" },
+          { "title": "Kaggle - Intro to Programming", "url": "https://www.kaggle.com/learn/intro-to-programming", "type": "course" },
+          { "title": "Pandas Documentation", "url": "https://pandas.pydata.org/docs/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "Kaggle Python Certificate", "provider": "Kaggle", "url": "https://www.kaggle.com/learn/python", "free": true }
+        ]
+      },
+      {
+        "id": "ds-2",
+        "title": "Statistics & Mathematics",
+        "description": "Understand probability, descriptive statistics, hypothesis testing, and linear algebra for ML.",
+        "order": 2,
+        "resources": [
+          { "title": "Khan Academy Statistics", "url": "https://www.khanacademy.org/math/statistics-probability", "type": "course" },
+          { "title": "StatQuest with Josh Starmer (YouTube)", "url": "https://www.youtube.com/c/joshstarmer", "type": "video" },
+          { "title": "3Blue1Brown - Linear Algebra", "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab", "type": "video" }
+        ],
+        "certifications": [
+          { "title": "Kaggle Data Analysis Certificate", "provider": "Kaggle", "url": "https://www.kaggle.com/learn/pandas", "free": true }
+        ]
+      },
+      {
+        "id": "ds-3",
+        "title": "Data Visualization",
+        "description": "Create compelling charts and dashboards using Matplotlib, Seaborn, Plotly, and Tableau.",
+        "order": 3,
+        "resources": [
+          { "title": "Kaggle - Data Visualization", "url": "https://www.kaggle.com/learn/data-visualization", "type": "course" },
+          { "title": "Plotly Documentation", "url": "https://plotly.com/python/", "type": "documentation" },
+          { "title": "Tableau Public Training", "url": "https://www.tableau.com/learn/training", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Tableau Desktop Specialist", "provider": "Tableau", "url": "https://www.tableau.com/learn/certification/desktop-specialist", "free": false }
+        ]
+      },
+      {
+        "id": "ds-4",
+        "title": "Machine Learning",
+        "description": "Learn supervised and unsupervised learning — regression, classification, clustering, and model evaluation with scikit-learn.",
+        "order": 4,
+        "resources": [
+          { "title": "fast.ai Practical ML", "url": "https://course.fast.ai/", "type": "course" },
+          { "title": "scikit-learn Documentation", "url": "https://scikit-learn.org/stable/", "type": "documentation" },
+          { "title": "Kaggle Intro to Machine Learning", "url": "https://www.kaggle.com/learn/intro-to-machine-learning", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Google ML Certificate", "provider": "Google / Coursera", "url": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate", "free": false },
+          { "title": "Kaggle ML Certificate", "provider": "Kaggle", "url": "https://www.kaggle.com/learn/intro-to-machine-learning", "free": true }
+        ]
+      },
+      {
+        "id": "ds-5",
+        "title": "Deep Learning & Neural Networks",
+        "description": "Dive into neural networks, CNNs, RNNs, and transformers using TensorFlow and PyTorch.",
+        "order": 5,
+        "resources": [
+          { "title": "Deep Learning Specialization - Coursera", "url": "https://www.coursera.org/specializations/deep-learning", "type": "course" },
+          { "title": "PyTorch Official Tutorials", "url": "https://pytorch.org/tutorials/", "type": "documentation" },
+          { "title": "fast.ai Deep Learning Course", "url": "https://course.fast.ai/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "TensorFlow Developer Certificate", "provider": "Google", "url": "https://www.tensorflow.org/certificate", "free": false }
+        ]
+      },
+      {
+        "id": "ds-6",
+        "title": "Big Data & MLOps",
+        "description": "Handle large datasets with Spark, deploy ML models to production, and monitor model performance.",
+        "order": 6,
+        "resources": [
+          { "title": "Apache Spark Documentation", "url": "https://spark.apache.org/docs/latest/", "type": "documentation" },
+          { "title": "MLflow Documentation", "url": "https://mlflow.org/docs/latest/index.html", "type": "documentation" },
+          { "title": "Made With ML - MLOps", "url": "https://madewithml.com/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Databricks Certified Data Engineer", "provider": "Databricks", "url": "https://www.databricks.com/learn/certification/data-engineer-associate", "free": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cloud-computing",
+    "title": "Cloud Computing",
+    "description": "Learn to design, deploy, and manage scalable cloud infrastructure on AWS, Azure, or GCP.",
+    "icon": "☁️",
+    "color": "#8B5CF6",
+    "level": "Intermediate to Advanced",
+    "duration": "6-10 months",
+    "stages": [
+      {
+        "id": "cc-1",
+        "title": "Cloud Fundamentals",
+        "description": "Understand cloud service models (IaaS, PaaS, SaaS), deployment models, and core cloud concepts.",
+        "order": 1,
+        "resources": [
+          { "title": "AWS Cloud Practitioner Essentials", "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials", "type": "course" },
+          { "title": "Google Cloud Fundamentals", "url": "https://cloud.google.com/training/courses/google-cloud-fundamentals", "type": "course" },
+          { "title": "Microsoft Azure Fundamentals", "url": "https://learn.microsoft.com/en-us/training/paths/az-900-describe-cloud-concepts/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "AWS Certified Cloud Practitioner", "provider": "AWS", "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/", "free": false },
+          { "title": "Microsoft Azure Fundamentals (AZ-900)", "provider": "Microsoft", "url": "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/", "free": false }
+        ]
+      },
+      {
+        "id": "cc-2",
+        "title": "Networking & Security",
+        "description": "Master VPCs, subnets, security groups, load balancers, DNS, and cloud security best practices.",
+        "order": 2,
+        "resources": [
+          { "title": "AWS Networking Fundamentals", "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/1706/aws-networking-fundamentals", "type": "course" },
+          { "title": "Google Cloud Networking", "url": "https://cloud.google.com/learn/training/networking", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "CompTIA Cloud+", "provider": "CompTIA", "url": "https://www.comptia.org/certifications/cloud", "free": false }
+        ]
+      },
+      {
+        "id": "cc-3",
+        "title": "Containers & Kubernetes",
+        "description": "Learn Docker containerization and Kubernetes orchestration for scalable application deployment.",
+        "order": 3,
+        "resources": [
+          { "title": "Docker Official Getting Started", "url": "https://docs.docker.com/get-started/", "type": "documentation" },
+          { "title": "Kubernetes Official Tutorial", "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/", "type": "documentation" },
+          { "title": "KodeKloud - Kubernetes for Beginners", "url": "https://kodekloud.com/courses/kubernetes-for-the-absolute-beginners-hands-on/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Certified Kubernetes Administrator (CKA)", "provider": "CNCF", "url": "https://www.cncf.io/certification/cka/", "free": false }
+        ]
+      },
+      {
+        "id": "cc-4",
+        "title": "Infrastructure as Code",
+        "description": "Automate cloud infrastructure provisioning using Terraform, AWS CloudFormation, or Pulumi.",
+        "order": 4,
+        "resources": [
+          { "title": "Terraform Official Tutorials", "url": "https://developer.hashicorp.com/terraform/tutorials", "type": "documentation" },
+          { "title": "AWS CloudFormation Docs", "url": "https://docs.aws.amazon.com/cloudformation/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "HashiCorp Terraform Associate", "provider": "HashiCorp", "url": "https://www.hashicorp.com/certification/terraform-associate", "free": false }
+        ]
+      },
+      {
+        "id": "cc-5",
+        "title": "CI/CD & DevOps",
+        "description": "Build automated pipelines using GitHub Actions, Jenkins, or GitLab CI for continuous integration and deployment.",
+        "order": 5,
+        "resources": [
+          { "title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions", "type": "documentation" },
+          { "title": "Jenkins Official Docs", "url": "https://www.jenkins.io/doc/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "AWS Certified DevOps Engineer", "provider": "AWS", "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/", "free": false }
+        ]
+      },
+      {
+        "id": "cc-6",
+        "title": "Cloud Architecture",
+        "description": "Design resilient, scalable cloud architectures following Well-Architected Framework principles.",
+        "order": 6,
+        "resources": [
+          { "title": "AWS Well-Architected Framework", "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html", "type": "documentation" },
+          { "title": "Google Cloud Architecture Center", "url": "https://cloud.google.com/architecture", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "AWS Solutions Architect Associate", "provider": "AWS", "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/", "free": false },
+          { "title": "Google Professional Cloud Architect", "provider": "Google", "url": "https://cloud.google.com/learn/certification/cloud-architect", "free": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "artificial-intelligence",
+    "title": "Artificial Intelligence",
+    "description": "Explore AI fundamentals, NLP, computer vision, and build intelligent systems.",
+    "icon": "🤖",
+    "color": "#F59E0B",
+    "level": "Intermediate to Advanced",
+    "duration": "10-18 months",
+    "stages": [
+      {
+        "id": "ai-1",
+        "title": "AI Foundations & Python",
+        "description": "Understand AI history, types of AI, Python for AI, and mathematical prerequisites.",
+        "order": 1,
+        "resources": [
+          { "title": "Elements of AI (free course)", "url": "https://www.elementsofai.com/", "type": "course" },
+          { "title": "AI for Everyone - Coursera", "url": "https://www.coursera.org/learn/ai-for-everyone", "type": "course" },
+          { "title": "Python for AI - Kaggle", "url": "https://www.kaggle.com/learn/python", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Elements of AI Certificate", "provider": "University of Helsinki", "url": "https://www.elementsofai.com/", "free": true }
+        ]
+      },
+      {
+        "id": "ai-2",
+        "title": "Machine Learning Algorithms",
+        "description": "Master supervised, unsupervised, and reinforcement learning algorithms and their applications.",
+        "order": 2,
+        "resources": [
+          { "title": "Andrew Ng ML Specialization", "url": "https://www.coursera.org/specializations/machine-learning-introduction", "type": "course" },
+          { "title": "scikit-learn User Guide", "url": "https://scikit-learn.org/stable/user_guide.html", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "IBM Machine Learning Professional", "provider": "Coursera / IBM", "url": "https://www.coursera.org/professional-certificates/ibm-machine-learning", "free": false }
+        ]
+      },
+      {
+        "id": "ai-3",
+        "title": "Natural Language Processing",
+        "description": "Process and analyze text using NLTK, spaCy, transformers, and large language models.",
+        "order": 3,
+        "resources": [
+          { "title": "Hugging Face NLP Course", "url": "https://huggingface.co/learn/nlp-course/chapter1/1", "type": "course" },
+          { "title": "spaCy Documentation", "url": "https://spacy.io/usage", "type": "documentation" },
+          { "title": "fast.ai NLP Course", "url": "https://course.fast.ai/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Hugging Face NLP Course Certificate", "provider": "Hugging Face", "url": "https://huggingface.co/learn/nlp-course", "free": true }
+        ]
+      },
+      {
+        "id": "ai-4",
+        "title": "Computer Vision",
+        "description": "Build image recognition, object detection, and segmentation systems using CNNs and OpenCV.",
+        "order": 4,
+        "resources": [
+          { "title": "CS231n - Convolutional Neural Networks", "url": "http://cs231n.stanford.edu/", "type": "course" },
+          { "title": "OpenCV Documentation", "url": "https://docs.opencv.org/4.x/", "type": "documentation" },
+          { "title": "Kaggle Computer Vision", "url": "https://www.kaggle.com/learn/computer-vision", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Kaggle Computer Vision Certificate", "provider": "Kaggle", "url": "https://www.kaggle.com/learn/computer-vision", "free": true }
+        ]
+      },
+      {
+        "id": "ai-5",
+        "title": "Generative AI & LLMs",
+        "description": "Work with GPT, LLaMA, and diffusion models. Build applications using LangChain and vector databases.",
+        "order": 5,
+        "resources": [
+          { "title": "DeepLearning.AI - Generative AI", "url": "https://learn.deeplearning.ai/", "type": "course" },
+          { "title": "LangChain Documentation", "url": "https://python.langchain.com/docs/get_started/introduction", "type": "documentation" },
+          { "title": "Anthropic Prompt Engineering Guide", "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "Google Generative AI Fundamentals", "provider": "Google Cloud", "url": "https://www.cloudskillsboost.google/paths/118", "free": true }
+        ]
+      },
+      {
+        "id": "ai-6",
+        "title": "AI Ethics & Deployment",
+        "description": "Understand AI ethics, bias, fairness, and deploy AI models responsibly using APIs and cloud services.",
+        "order": 6,
+        "resources": [
+          { "title": "AI Ethics - Fast.ai", "url": "https://ethics.fast.ai/", "type": "course" },
+          { "title": "Google PAIR Guidebook", "url": "https://pair.withgoogle.com/guidebook/", "type": "documentation" },
+          { "title": "BentoML Deployment Guide", "url": "https://docs.bentoml.com/en/latest/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "IBM AI Engineering Certificate", "provider": "Coursera / IBM", "url": "https://www.coursera.org/professional-certificates/ai-engineer", "free": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cybersecurity",
+    "title": "Cybersecurity",
+    "description": "Build expertise in network security, ethical hacking, and defending systems against threats.",
+    "icon": "🔐",
+    "color": "#EF4444",
+    "level": "Beginner to Advanced",
+    "duration": "8-16 months",
+    "stages": [
+      {
+        "id": "cs-1",
+        "title": "Security Fundamentals",
+        "description": "Learn core security concepts — CIA triad, threat modeling, attack types, and security frameworks.",
+        "order": 1,
+        "resources": [
+          { "title": "NIST Cybersecurity Framework", "url": "https://www.nist.gov/cyberframework", "type": "documentation" },
+          { "title": "Cybersecurity Fundamentals - IBM (Coursera)", "url": "https://www.coursera.org/learn/ibm-cybersecurity-basics", "type": "course" },
+          { "title": "TryHackMe - Pre-Security Path", "url": "https://tryhackme.com/path/outline/presecurity", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "CompTIA Security+", "provider": "CompTIA", "url": "https://www.comptia.org/certifications/security", "free": false },
+          { "title": "Google Cybersecurity Certificate", "provider": "Google / Coursera", "url": "https://www.coursera.org/professional-certificates/google-cybersecurity", "free": false }
+        ]
+      },
+      {
+        "id": "cs-2",
+        "title": "Networking & Protocols",
+        "description": "Understand TCP/IP, DNS, HTTP/S, firewalls, VPNs, and how network attacks work.",
+        "order": 2,
+        "resources": [
+          { "title": "Professor Messer's Network+", "url": "https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/", "type": "video" },
+          { "title": "Wireshark Official Docs", "url": "https://www.wireshark.org/docs/", "type": "documentation" },
+          { "title": "TryHackMe - Network Fundamentals", "url": "https://tryhackme.com/module/network-fundamentals", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "CompTIA Network+", "provider": "CompTIA", "url": "https://www.comptia.org/certifications/network", "free": false }
+        ]
+      },
+      {
+        "id": "cs-3",
+        "title": "Ethical Hacking & Pentesting",
+        "description": "Learn penetration testing methodologies, vulnerability scanning, and exploit techniques ethically.",
+        "order": 3,
+        "resources": [
+          { "title": "TryHackMe - Jr Penetration Tester", "url": "https://tryhackme.com/path/outline/jrpenetrationtester", "type": "course" },
+          { "title": "Hack The Box Academy", "url": "https://academy.hackthebox.com/", "type": "course" },
+          { "title": "OWASP Testing Guide", "url": "https://owasp.org/www-project-web-security-testing-guide/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "CEH - Certified Ethical Hacker", "provider": "EC-Council", "url": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/", "free": false },
+          { "title": "eJPT - eLearnSecurity Junior Pen Tester", "provider": "INE", "url": "https://ine.com/certifications/ejpt-certification", "free": false }
+        ]
+      },
+      {
+        "id": "cs-4",
+        "title": "Web Application Security",
+        "description": "Master OWASP Top 10, SQL injection, XSS, CSRF, authentication flaws, and web app pentesting.",
+        "order": 4,
+        "resources": [
+          { "title": "PortSwigger Web Security Academy (free)", "url": "https://portswigger.net/web-security", "type": "course" },
+          { "title": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/", "type": "documentation" },
+          { "title": "DVWA - Damn Vulnerable Web App", "url": "https://dvwa.co.uk/", "type": "tool" }
+        ],
+        "certifications": [
+          { "title": "Burp Suite Certified Practitioner", "provider": "PortSwigger", "url": "https://portswigger.net/web-security/certification", "free": false }
+        ]
+      },
+      {
+        "id": "cs-5",
+        "title": "Digital Forensics & Incident Response",
+        "description": "Learn to investigate security incidents, analyze malware, and perform digital forensic analysis.",
+        "order": 5,
+        "resources": [
+          { "title": "TryHackMe - SOC Level 1", "url": "https://tryhackme.com/path/outline/soclevel1", "type": "course" },
+          { "title": "SANS DFIR Resources", "url": "https://www.sans.org/blog/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "GCFE - GIAC Certified Forensic Examiner", "provider": "GIAC", "url": "https://www.giac.org/certifications/certified-forensic-examiner-gcfe/", "free": false }
+        ]
+      },
+      {
+        "id": "cs-6",
+        "title": "Cloud Security & Compliance",
+        "description": "Secure cloud environments, understand shared responsibility, and implement compliance frameworks.",
+        "order": 6,
+        "resources": [
+          { "title": "AWS Security Documentation", "url": "https://docs.aws.amazon.com/security/", "type": "documentation" },
+          { "title": "CISA Cybersecurity Resources", "url": "https://www.cisa.gov/cybersecurity", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "AWS Security Specialty", "provider": "AWS", "url": "https://aws.amazon.com/certification/certified-security-specialty/", "free": false },
+          { "title": "CISSP", "provider": "ISC2", "url": "https://www.isc2.org/certifications/cissp", "free": false }
+        ]
+      }
+    ]
+  }
+]
