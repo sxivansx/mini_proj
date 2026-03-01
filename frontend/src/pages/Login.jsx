@@ -1,90 +1,36 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import api from '../api/axios';
-import { useAuth } from '../context/AuthContext';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { Link } from 'react-router-dom';
+import { LoginForm } from '@/components/login-form';
 
 export default function Login() {
-  const { login } = useAuth();
-  const navigate = useNavigate();
-  const [form, setForm] = useState({ email: '', password: '' });
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-    setLoading(true);
-    try {
-      const { data } = await api.post('/auth/login', form);
-      login(data.user, data.token);
-      navigate('/dashboard');
-    } catch (err) {
-      setError(err.response?.data?.message || 'Login failed');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
-    <div className="min-h-[calc(100dvh-56px)] flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-sm">
-        {/* Header */}
-        <div className="mb-8">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">
-            // auth
-          </p>
-          <h1 className="text-2xl font-bold text-foreground">Welcome back</h1>
-          <p className="mt-1 text-sm text-muted-foreground">Sign in to your DevPath account</p>
-        </div>
-
-        {/* Card */}
-        <form
-          onSubmit={handleSubmit}
-          className="rounded-xl border border-border bg-card p-6 space-y-4"
-        >
-          <div className="space-y-1.5">
-            <Label htmlFor="email" className="text-xs text-muted-foreground">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="you@example.com"
-              required
-              value={form.email}
-              onChange={e => setForm({ ...form, email: e.target.value })}
-              className="bg-background border-border text-sm font-mono"
-            />
-          </div>
-          <div className="space-y-1.5">
-            <Label htmlFor="password" className="text-xs text-muted-foreground">Password</Label>
-            <Input
-              id="password"
-              type="password"
-              placeholder="••••••••"
-              required
-              value={form.password}
-              onChange={e => setForm({ ...form, password: e.target.value })}
-              className="bg-background border-border text-sm font-mono"
-            />
-          </div>
-          {error && (
-            <p className="rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-xs text-destructive">
-              {error}
-            </p>
-          )}
-          <Button type="submit" className="w-full text-sm" disabled={loading}>
-            {loading ? 'Signing in…' : 'Sign In →'}
-          </Button>
-        </form>
-
-        <p className="mt-4 text-center text-xs text-muted-foreground">
-          No account?{' '}
-          <Link to="/register" className="text-primary hover:underline underline-offset-4">
-            Create one free
+    <div className="grid min-h-[calc(100svh-56px)] lg:grid-cols-2">
+      <div className="flex flex-col gap-4 p-6 md:p-10">
+        <div className="flex justify-center gap-2 md:justify-start">
+          <Link to="/" aria-label="home" className="flex items-center gap-2 font-bold tracking-tight">
+            <span className="text-foreground">dev</span>
+            <span className="text-primary">path</span>
+            <span className="ml-1 rounded border border-primary/30 bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-primary">
+              beta
+            </span>
           </Link>
-        </p>
+        </div>
+        <div className="flex flex-1 items-center justify-center">
+          <div className="w-full max-w-xs">
+            <LoginForm />
+          </div>
+        </div>
+      </div>
+      <div className="bg-background relative hidden lg:block">
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage:
+              'linear-gradient(30deg, var(--primary) 12%, transparent 12.5%, transparent 87%, var(--primary) 87.5%, var(--primary)), linear-gradient(150deg, var(--primary) 12%, transparent 12.5%, transparent 87%, var(--primary) 87.5%, var(--primary)), linear-gradient(30deg, var(--primary) 12%, transparent 12.5%, transparent 87%, var(--primary) 87.5%, var(--primary)), linear-gradient(150deg, var(--primary) 12%, transparent 12.5%, transparent 87%, var(--primary) 87.5%, var(--primary)), linear-gradient(60deg, color-mix(in srgb, var(--primary) 77%, transparent) 25%, transparent 25.5%, transparent 75%, color-mix(in srgb, var(--primary) 77%, transparent) 75%, color-mix(in srgb, var(--primary) 77%, transparent)), linear-gradient(60deg, color-mix(in srgb, var(--primary) 77%, transparent) 25%, transparent 25.5%, transparent 75%, color-mix(in srgb, var(--primary) 77%, transparent) 75%, color-mix(in srgb, var(--primary) 77%, transparent))',
+            backgroundPosition: '0 0, 0 0, 30px 53px, 30px 53px, 0 0, 30px 53px',
+            backgroundSize: '60px 106px',
+            opacity: 0.4,
+          }}
+        />
       </div>
     </div>
   );
