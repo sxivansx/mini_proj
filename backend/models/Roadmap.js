@@ -13,11 +13,19 @@ const certSchema = new mongoose.Schema({
   free:     Boolean
 }, { _id: false });
 
+const projectSchema = new mongoose.Schema({
+  title:       String,
+  description: String
+}, { _id: false });
+
 const stageSchema = new mongoose.Schema({
   id:             { type: String, required: true },
   title:          { type: String, required: true },
   description:    String,
   order:          Number,
+  estimatedHours: Number,
+  topics:         [String],
+  projects:       [projectSchema],
   resources:      [resourceSchema],
   certifications: [certSchema]
 }, { _id: false });

@@ -7,7 +7,7 @@ const Roadmap = require('../models/Roadmap');
 // GET /api/progress - summary across all roadmaps
 router.get('/', auth, async (req, res) => {
   try {
-    const roadmaps = await Roadmap.find({}, 'id title icon color stages');
+    const roadmaps = await Roadmap.find({}, 'id title icon color duration stages');
     const userProgress = await Progress.find({ userId: req.user.id });
 
     const summary = roadmaps.map(rm => {
@@ -19,6 +19,7 @@ router.get('/', auth, async (req, res) => {
         title: rm.title,
         icon: rm.icon,
         color: rm.color,
+        duration: rm.duration,
         totalStages: rm.stages.length,
         completedStages: completed.length,
         completedIds: completed,
@@ -27,6 +28,24 @@ router.get('/', auth, async (req, res) => {
     });
 
     res.json(summary);
+  } catch (err) {
+    res.status(500).json({ message: 'Server error', error: err.message });
+  }
+});
+
+// GET /api/progress/activity - daily completion counts for the last 365 days
+router.get('/activity', auth, async (req, res) => {
+  try {
+    const since = new Date();
+    since.setFullYear(since.getFullYear() - 1);
+    const records = await Progress.find({ userId: req.user.id, completedAt: { $gte: since } }, 'completedAt');
+    // Group by YYYY-MM-DD
+    const counts = {};
+    records.forEach(r => {
+      const day = r.completedAt.toISOString().slice(0, 10);
+      counts[day] = (counts[day] || 0) + 1;
+    });
+    res.json(counts);
   } catch (err) {
     res.status(500).json({ message: 'Server error', error: err.message });
   }

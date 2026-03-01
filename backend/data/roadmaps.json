@@ -13,6 +13,20 @@
         "title": "HTML & CSS Fundamentals",
         "description": "Learn the building blocks of the web. Understand semantic HTML, CSS box model, flexbox, grid, and responsive design.",
         "order": 1,
+        "estimatedHours": 60,
+        "topics": [
+          "Semantic HTML5 elements (header, main, section, article)",
+          "CSS box model: margin, border, padding, content",
+          "Flexbox — one-dimensional layouts",
+          "CSS Grid — two-dimensional layouts",
+          "Responsive design & media queries",
+          "CSS custom properties (variables)",
+          "Web accessibility basics (ARIA, alt text, contrast)"
+        ],
+        "projects": [
+          { "title": "Personal Portfolio Page", "description": "Build a multi-section portfolio with a hero, about, projects, and contact section using only HTML & CSS." },
+          { "title": "Product Landing Page Clone", "description": "Clone a real product page (e.g., Stripe or Vercel homepage) focusing on layout accuracy with Flexbox and Grid." }
+        ],
         "resources": [
           { "title": "MDN Web Docs - HTML", "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML", "type": "documentation" },
           { "title": "MDN Web Docs - CSS", "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS", "type": "documentation" },
@@ -28,6 +42,21 @@
         "title": "JavaScript Essentials",
         "description": "Master JavaScript fundamentals — variables, functions, DOM manipulation, events, async/await, and ES6+ features.",
         "order": 2,
+        "estimatedHours": 80,
+        "topics": [
+          "Variables, data types, and type coercion",
+          "Functions, scope, and closures",
+          "DOM selection and manipulation",
+          "Event listeners and event delegation",
+          "Promises and async/await",
+          "ES6+ features: arrow functions, destructuring, spread/rest, modules",
+          "Array methods: map, filter, reduce, find",
+          "Error handling with try/catch"
+        ],
+        "projects": [
+          { "title": "To-Do List App", "description": "Build a fully functional to-do app with add, delete, complete, and filter features — no frameworks, pure JS." },
+          { "title": "Weather App", "description": "Fetch live weather data from OpenWeatherMap API and display it with dynamic UI updates based on conditions." }
+        ],
         "resources": [
           { "title": "javascript.info - The Modern JavaScript Tutorial", "url": "https://javascript.info/", "type": "tutorial" },
           { "title": "MDN JavaScript Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide", "type": "documentation" },
@@ -43,6 +72,20 @@
         "title": "Version Control with Git",
         "description": "Learn Git for source control — branching, merging, pull requests, and collaboration workflows on GitHub.",
         "order": 3,
+        "estimatedHours": 20,
+        "topics": [
+          "git init, add, commit, push, pull, clone",
+          "Branching: feature branches, naming conventions",
+          "Merging and rebasing",
+          "Resolving merge conflicts",
+          "GitHub pull requests and code reviews",
+          "Git workflows: Gitflow, trunk-based development",
+          ".gitignore best practices"
+        ],
+        "projects": [
+          { "title": "Open Source First Contribution", "description": "Find a beginner-friendly GitHub issue, fork the repo, make a fix, and open a pull request." },
+          { "title": "Team Simulation", "description": "Create two GitHub accounts and simulate a feature branch workflow with PR reviews on a shared project." }
+        ],
         "resources": [
           { "title": "Pro Git Book (free)", "url": "https://git-scm.com/book/en/v2", "type": "book" },
           { "title": "GitHub Skills", "url": "https://skills.github.com/", "type": "course" },
@@ -57,6 +100,21 @@
         "title": "React.js",
         "description": "Build dynamic UIs with React — components, hooks, state management, React Router, and modern patterns.",
         "order": 4,
+        "estimatedHours": 80,
+        "topics": [
+          "JSX syntax and component architecture",
+          "Props and state management",
+          "Core hooks: useState, useEffect, useCallback, useMemo",
+          "React Router v6 — nested routes, loaders",
+          "Context API for global state",
+          "Custom hooks",
+          "Performance: React.memo, lazy loading, code splitting",
+          "Forms and controlled components"
+        ],
+        "projects": [
+          { "title": "E-Commerce Product Listing", "description": "Build a product catalog with filtering, sorting, a cart, and checkout flow using React state and Context API." },
+          { "title": "Real-Time Markdown Editor", "description": "Create a split-pane editor that renders Markdown live, with localStorage persistence of drafts." }
+        ],
         "resources": [
           { "title": "React Official Docs", "url": "https://react.dev/", "type": "documentation" },
           { "title": "Scrimba React Course", "url": "https://scrimba.com/learn/learnreact", "type": "course" },
@@ -71,6 +129,21 @@
         "title": "Node.js & Express Backend",
         "description": "Build server-side applications with Node.js and Express — REST APIs, middleware, authentication, and file handling.",
         "order": 5,
+        "estimatedHours": 70,
+        "topics": [
+          "Node.js event loop and non-blocking I/O",
+          "npm / package.json ecosystem",
+          "Express routing and middleware chain",
+          "REST API design principles",
+          "JWT authentication and bcrypt password hashing",
+          "File uploads with Multer",
+          "Environment variables and .env",
+          "Error handling middleware"
+        ],
+        "projects": [
+          { "title": "Blog REST API", "description": "Build a full CRUD REST API for a blog with user auth, protected routes, and Mongoose for MongoDB persistence." },
+          { "title": "File Upload Service", "description": "Create an Express service that accepts image uploads, resizes them with Sharp, and stores them locally or on S3." }
+        ],
         "resources": [
           { "title": "Node.js Official Docs", "url": "https://nodejs.org/en/docs", "type": "documentation" },
           { "title": "Express.js Official Guide", "url": "https://expressjs.com/en/guide/routing.html", "type": "documentation" },
@@ -85,6 +158,21 @@
         "title": "Databases & Deployment",
         "description": "Learn SQL and NoSQL databases (PostgreSQL, MongoDB), and deploy apps using services like Vercel, Railway, or AWS.",
         "order": 6,
+        "estimatedHours": 60,
+        "topics": [
+          "SQL fundamentals: SELECT, JOIN, GROUP BY, subqueries",
+          "PostgreSQL — schemas, indexes, transactions",
+          "MongoDB document model and Mongoose ODM",
+          "Database indexing and query optimization",
+          "Connection pooling and environment configs",
+          "Deploying Node.js to Railway / Render",
+          "Deploying React to Vercel / Netlify",
+          "CORS, security headers, and HTTPS"
+        ],
+        "projects": [
+          { "title": "Full-Stack Notes App", "description": "Build a notes app with React frontend, Express backend, and MongoDB — deployed end-to-end with auth." },
+          { "title": "PostgreSQL Analytics Dashboard", "description": "Import a public CSV dataset into Postgres, write complex queries, and visualize results in a React dashboard." }
+        ],
         "resources": [
           { "title": "MongoDB University (free courses)", "url": "https://learn.mongodb.com/", "type": "course" },
           { "title": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/", "type": "tutorial" },
@@ -111,6 +199,20 @@
         "title": "Python for Data Science",
         "description": "Master Python basics, NumPy, Pandas, and Matplotlib for data manipulation and visualization.",
         "order": 1,
+        "estimatedHours": 60,
+        "topics": [
+          "Python syntax: loops, functions, list comprehensions",
+          "NumPy arrays and vectorized operations",
+          "Pandas DataFrames: load, inspect, filter, group",
+          "Handling missing data and data types",
+          "Matplotlib basic charts (line, bar, scatter, histogram)",
+          "Jupyter Notebooks workflow",
+          "Reading/writing CSV and JSON files"
+        ],
+        "projects": [
+          { "title": "Exploratory Data Analysis (EDA)", "description": "Pick a public dataset (e.g., Titanic or Iris) and perform a full EDA: cleaning, stats, and 5+ visualizations." },
+          { "title": "Student Grade Analyzer", "description": "Build a CLI tool that reads a CSV of student grades and outputs statistics, rankings, and pass/fail summaries." }
+        ],
         "resources": [
           { "title": "Python Official Tutorial", "url": "https://docs.python.org/3/tutorial/", "type": "documentation" },
           { "title": "Kaggle - Intro to Programming", "url": "https://www.kaggle.com/learn/intro-to-programming", "type": "course" },
@@ -125,6 +227,20 @@
         "title": "Statistics & Mathematics",
         "description": "Understand probability, descriptive statistics, hypothesis testing, and linear algebra for ML.",
         "order": 2,
+        "estimatedHours": 50,
+        "topics": [
+          "Descriptive stats: mean, median, variance, standard deviation",
+          "Probability distributions (normal, binomial, Poisson)",
+          "Hypothesis testing and p-values",
+          "Confidence intervals",
+          "Correlation vs causation",
+          "Linear algebra: vectors, matrices, dot product, eigenvectors",
+          "Calculus basics: derivatives and gradients for ML"
+        ],
+        "projects": [
+          { "title": "A/B Test Analysis", "description": "Simulate an A/B test dataset, run a t-test, calculate statistical significance, and write a conclusions report." },
+          { "title": "Statistical Report", "description": "Analyze a real-world dataset (e.g., COVID-19 data) and produce a statistics summary with hypothesis tests." }
+        ],
         "resources": [
           { "title": "Khan Academy Statistics", "url": "https://www.khanacademy.org/math/statistics-probability", "type": "course" },
           { "title": "StatQuest with Josh Starmer (YouTube)", "url": "https://www.youtube.com/c/joshstarmer", "type": "video" },
@@ -139,6 +255,20 @@
         "title": "Data Visualization",
         "description": "Create compelling charts and dashboards using Matplotlib, Seaborn, Plotly, and Tableau.",
         "order": 3,
+        "estimatedHours": 40,
+        "topics": [
+          "Choosing the right chart type for your data",
+          "Seaborn statistical plots (heatmap, pairplot, violin)",
+          "Plotly interactive charts and animations",
+          "Matplotlib advanced customization (subplots, styles)",
+          "Tableau dashboards and calculated fields",
+          "Color theory and accessibility in data viz",
+          "Storytelling with data — narrative structure"
+        ],
+        "projects": [
+          { "title": "Interactive COVID-19 Dashboard", "description": "Build a Plotly Dash or Streamlit dashboard showing COVID-19 trends with filters by country and date range." },
+          { "title": "Tableau Sales Analytics Workbook", "description": "Connect Tableau to a sales dataset and build an executive dashboard with KPIs, trends, and drill-down filters." }
+        ],
         "resources": [
           { "title": "Kaggle - Data Visualization", "url": "https://www.kaggle.com/learn/data-visualization", "type": "course" },
           { "title": "Plotly Documentation", "url": "https://plotly.com/python/", "type": "documentation" },
@@ -153,6 +283,21 @@
         "title": "Machine Learning",
         "description": "Learn supervised and unsupervised learning — regression, classification, clustering, and model evaluation with scikit-learn.",
         "order": 4,
+        "estimatedHours": 80,
+        "topics": [
+          "Supervised vs unsupervised learning",
+          "Linear regression and regularization (L1/L2)",
+          "Logistic regression and classification metrics",
+          "Decision trees, random forests, gradient boosting",
+          "K-means and hierarchical clustering",
+          "Model evaluation: accuracy, F1, ROC-AUC, confusion matrix",
+          "Feature engineering and selection",
+          "Cross-validation and scikit-learn pipelines"
+        ],
+        "projects": [
+          { "title": "House Price Prediction", "description": "Train a regression model on the Kaggle Housing dataset, engineer features, tune hyperparameters, and submit predictions." },
+          { "title": "Customer Churn Classifier", "description": "Build a binary classifier to predict telecom customer churn, optimize for recall, and explain feature importance." }
+        ],
         "resources": [
           { "title": "fast.ai Practical ML", "url": "https://course.fast.ai/", "type": "course" },
           { "title": "scikit-learn Documentation", "url": "https://scikit-learn.org/stable/", "type": "documentation" },
@@ -168,6 +313,21 @@
         "title": "Deep Learning & Neural Networks",
         "description": "Dive into neural networks, CNNs, RNNs, and transformers using TensorFlow and PyTorch.",
         "order": 5,
+        "estimatedHours": 90,
+        "topics": [
+          "Neural network architecture: layers, weights, biases",
+          "Activation functions: ReLU, sigmoid, softmax",
+          "Backpropagation and gradient descent",
+          "Convolutional Neural Networks (CNNs) for images",
+          "Recurrent networks (RNNs, LSTMs) for sequences",
+          "Transfer learning with pretrained models",
+          "Batch normalization and dropout for regularization",
+          "TensorFlow/Keras and PyTorch APIs"
+        ],
+        "projects": [
+          { "title": "MNIST Digit Classifier", "description": "Train a CNN from scratch on MNIST, achieve >99% accuracy, and build a web UI where users can draw digits." },
+          { "title": "Sentiment Analysis with LSTM", "description": "Train an LSTM on movie reviews to classify sentiment, compare with a fine-tuned BERT baseline." }
+        ],
         "resources": [
           { "title": "Deep Learning Specialization - Coursera", "url": "https://www.coursera.org/specializations/deep-learning", "type": "course" },
           { "title": "PyTorch Official Tutorials", "url": "https://pytorch.org/tutorials/", "type": "documentation" },
@@ -182,6 +342,21 @@
         "title": "Big Data & MLOps",
         "description": "Handle large datasets with Spark, deploy ML models to production, and monitor model performance.",
         "order": 6,
+        "estimatedHours": 70,
+        "topics": [
+          "Apache Spark architecture and PySpark DataFrames",
+          "Distributed data processing at scale",
+          "ML pipelines and feature stores",
+          "Model versioning and experiment tracking with MLflow",
+          "Dockerizing ML models for reproducibility",
+          "Model serving: FastAPI, BentoML, Triton",
+          "Monitoring model drift and data quality",
+          "A/B testing and shadow deployments in production"
+        ],
+        "projects": [
+          { "title": "PySpark Log Analysis Pipeline", "description": "Process a multi-GB web server log dataset with PySpark, extract KPIs, and visualize trends in a notebook." },
+          { "title": "MLflow Experiment Tracker", "description": "Train 5 model variants with different hyperparameters, log all runs in MLflow, and compare results in the UI." }
+        ],
         "resources": [
           { "title": "Apache Spark Documentation", "url": "https://spark.apache.org/docs/latest/", "type": "documentation" },
           { "title": "MLflow Documentation", "url": "https://mlflow.org/docs/latest/index.html", "type": "documentation" },
@@ -207,6 +382,20 @@
         "title": "Cloud Fundamentals",
         "description": "Understand cloud service models (IaaS, PaaS, SaaS), deployment models, and core cloud concepts.",
         "order": 1,
+        "estimatedHours": 30,
+        "topics": [
+          "IaaS, PaaS, SaaS — when to use each",
+          "Public, private, and hybrid cloud models",
+          "Core services: compute (EC2), storage (S3), networking (VPC)",
+          "IAM: users, roles, policies, least privilege",
+          "Regions, availability zones, and edge locations",
+          "Cloud billing and cost management basics",
+          "Shared responsibility model"
+        ],
+        "projects": [
+          { "title": "Static Website on S3", "description": "Deploy a static HTML/CSS site to an S3 bucket with public access, custom error pages, and CloudFront CDN." },
+          { "title": "First EC2 Instance", "description": "Launch an EC2 instance, SSH in, install Nginx, configure a security group, and serve a hello-world page." }
+        ],
         "resources": [
           { "title": "AWS Cloud Practitioner Essentials", "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials", "type": "course" },
           { "title": "Google Cloud Fundamentals", "url": "https://cloud.google.com/training/courses/google-cloud-fundamentals", "type": "course" },
@@ -222,6 +411,21 @@
         "title": "Networking & Security",
         "description": "Master VPCs, subnets, security groups, load balancers, DNS, and cloud security best practices.",
         "order": 2,
+        "estimatedHours": 40,
+        "topics": [
+          "VPCs, subnets (public/private), and CIDR blocks",
+          "Security groups vs network ACLs",
+          "Elastic Load Balancers and target groups",
+          "Auto-scaling groups",
+          "Route 53 DNS and routing policies",
+          "SSL/TLS certificates with ACM",
+          "CloudFront CDN and caching",
+          "Zero-trust security principles"
+        ],
+        "projects": [
+          { "title": "Multi-Tier VPC Architecture", "description": "Build a VPC with public and private subnets, a NAT gateway, bastion host, and an ALB routing to private EC2s." },
+          { "title": "CloudFront Distribution", "description": "Set up CloudFront in front of an S3 bucket with custom caching rules, geo-restrictions, and HTTPS redirect." }
+        ],
         "resources": [
           { "title": "AWS Networking Fundamentals", "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/1706/aws-networking-fundamentals", "type": "course" },
           { "title": "Google Cloud Networking", "url": "https://cloud.google.com/learn/training/networking", "type": "course" }
@@ -235,6 +439,21 @@
         "title": "Containers & Kubernetes",
         "description": "Learn Docker containerization and Kubernetes orchestration for scalable application deployment.",
         "order": 3,
+        "estimatedHours": 60,
+        "topics": [
+          "Docker images, containers, and registries",
+          "Writing efficient Dockerfiles",
+          "docker-compose for multi-service apps",
+          "Kubernetes pods, deployments, and ReplicaSets",
+          "Services, Ingress, and DNS in K8s",
+          "ConfigMaps and Secrets",
+          "Helm charts for templating",
+          "Horizontal Pod Autoscaler (HPA)"
+        ],
+        "projects": [
+          { "title": "Containerize a Node.js App", "description": "Dockerize an Express API with a multi-stage build, push to DockerHub, and run with docker-compose alongside MongoDB." },
+          { "title": "K8s Microservice Deployment", "description": "Deploy a two-service app (frontend + backend) to a local k8s cluster (minikube) with Ingress and ConfigMaps." }
+        ],
         "resources": [
           { "title": "Docker Official Getting Started", "url": "https://docs.docker.com/get-started/", "type": "documentation" },
           { "title": "Kubernetes Official Tutorial", "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/", "type": "documentation" },
@@ -249,6 +468,21 @@
         "title": "Infrastructure as Code",
         "description": "Automate cloud infrastructure provisioning using Terraform, AWS CloudFormation, or Pulumi.",
         "order": 4,
+        "estimatedHours": 50,
+        "topics": [
+          "Terraform providers, resources, and state",
+          "Variables, outputs, and locals",
+          "Remote state backends (S3 + DynamoDB locking)",
+          "Terraform modules for reusable infrastructure",
+          "AWS CloudFormation stacks and change sets",
+          "Drift detection and remediation",
+          "GitOps: infrastructure changes via pull requests",
+          "Policy as code with Sentinel or OPA"
+        ],
+        "projects": [
+          { "title": "Terraform VPC Module", "description": "Write a reusable Terraform module that provisions a full VPC with public/private subnets, NAT, and security groups." },
+          { "title": "CloudFormation 3-Tier App", "description": "Define a three-tier web app (ALB, EC2 ASG, RDS) in a CloudFormation template with nested stacks." }
+        ],
         "resources": [
           { "title": "Terraform Official Tutorials", "url": "https://developer.hashicorp.com/terraform/tutorials", "type": "documentation" },
           { "title": "AWS CloudFormation Docs", "url": "https://docs.aws.amazon.com/cloudformation/", "type": "documentation" }
@@ -262,6 +496,21 @@
         "title": "CI/CD & DevOps",
         "description": "Build automated pipelines using GitHub Actions, Jenkins, or GitLab CI for continuous integration and deployment.",
         "order": 5,
+        "estimatedHours": 45,
+        "topics": [
+          "Git branching strategies for CI/CD (trunk-based, Gitflow)",
+          "GitHub Actions: workflows, jobs, steps, runners",
+          "Build, test, lint, and security scan stages",
+          "Secrets management in pipelines",
+          "Artifact storage and versioning",
+          "Blue-green and canary deployments",
+          "Feature flags for safe releases",
+          "Monitoring and alerting with CloudWatch / Datadog"
+        ],
+        "projects": [
+          { "title": "Full CI/CD Pipeline", "description": "Build a GitHub Actions pipeline for a React + Node app: lint → test → build Docker image → push to ECR → deploy to ECS." },
+          { "title": "Automated Testing Gate", "description": "Add a CI stage that runs unit tests, integration tests, and blocks PRs from merging if coverage drops below 80%." }
+        ],
         "resources": [
           { "title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions", "type": "documentation" },
           { "title": "Jenkins Official Docs", "url": "https://www.jenkins.io/doc/", "type": "documentation" }
@@ -275,6 +524,21 @@
         "title": "Cloud Architecture",
         "description": "Design resilient, scalable cloud architectures following Well-Architected Framework principles.",
         "order": 6,
+        "estimatedHours": 60,
+        "topics": [
+          "AWS Well-Architected Framework: 6 pillars",
+          "High availability and fault tolerance patterns",
+          "Disaster recovery strategies (RTO/RPO)",
+          "Event-driven architecture with SQS, SNS, EventBridge",
+          "Serverless with Lambda and API Gateway",
+          "Microservices patterns and service mesh",
+          "Cost optimization strategies",
+          "Multi-region active-active design"
+        ],
+        "projects": [
+          { "title": "Serverless REST API", "description": "Build a fully serverless REST API using Lambda, API Gateway, DynamoDB, and Cognito for auth — zero servers." },
+          { "title": "Multi-Region Failover Design", "description": "Architect and document a multi-region active-passive setup with Route 53 health checks and automated failover." }
+        ],
         "resources": [
           { "title": "AWS Well-Architected Framework", "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html", "type": "documentation" },
           { "title": "Google Cloud Architecture Center", "url": "https://cloud.google.com/architecture", "type": "documentation" }
@@ -300,6 +564,20 @@
         "title": "AI Foundations & Python",
         "description": "Understand AI history, types of AI, Python for AI, and mathematical prerequisites.",
         "order": 1,
+        "estimatedHours": 40,
+        "topics": [
+          "History of AI and key milestones",
+          "Narrow AI vs general AI vs AGI",
+          "Machine learning vs deep learning vs AI",
+          "Python AI ecosystem: NumPy, Pandas, Matplotlib, scikit-learn",
+          "Linear algebra refresher: vectors, matrices, transformations",
+          "Calculus: derivatives, chain rule, gradient intuition",
+          "Ethical AI considerations from day one"
+        ],
+        "projects": [
+          { "title": "Rule-Based Chatbot", "description": "Build a command-line chatbot with pattern matching and scripted responses — no ML, just logic and NLP intuitions." },
+          { "title": "Dataset Exploration Notebook", "description": "Load 3 public datasets, compute statistics, plot distributions, and write observations in a structured notebook." }
+        ],
         "resources": [
           { "title": "Elements of AI (free course)", "url": "https://www.elementsofai.com/", "type": "course" },
           { "title": "AI for Everyone - Coursera", "url": "https://www.coursera.org/learn/ai-for-everyone", "type": "course" },
@@ -314,6 +592,21 @@
         "title": "Machine Learning Algorithms",
         "description": "Master supervised, unsupervised, and reinforcement learning algorithms and their applications.",
         "order": 2,
+        "estimatedHours": 70,
+        "topics": [
+          "Linear and logistic regression",
+          "Support vector machines (SVM)",
+          "k-NN and naive Bayes classifiers",
+          "Decision trees and ensemble methods (random forest, XGBoost)",
+          "Dimensionality reduction: PCA, t-SNE, UMAP",
+          "Reinforcement learning fundamentals (Q-learning basics)",
+          "Model selection and hyperparameter tuning (GridSearchCV)",
+          "Bias-variance tradeoff"
+        ],
+        "projects": [
+          { "title": "Iris Flower Classifier", "description": "Train 5 different classifiers on the Iris dataset, compare accuracy, and visualize decision boundaries." },
+          { "title": "Titanic Survival Prediction", "description": "Complete the Kaggle Titanic challenge: feature engineering, model stacking, and leaderboard submission." }
+        ],
         "resources": [
           { "title": "Andrew Ng ML Specialization", "url": "https://www.coursera.org/specializations/machine-learning-introduction", "type": "course" },
           { "title": "scikit-learn User Guide", "url": "https://scikit-learn.org/stable/user_guide.html", "type": "documentation" }
@@ -327,6 +620,21 @@
         "title": "Natural Language Processing",
         "description": "Process and analyze text using NLTK, spaCy, transformers, and large language models.",
         "order": 3,
+        "estimatedHours": 70,
+        "topics": [
+          "Text preprocessing: tokenization, stemming, lemmatization",
+          "Bag-of-Words and TF-IDF representations",
+          "Word embeddings: Word2Vec, GloVe, FastText",
+          "Transformer architecture: attention mechanism explained",
+          "BERT, RoBERTa — fine-tuning for classification",
+          "Named entity recognition (NER)",
+          "Text classification and multi-label problems",
+          "Prompt engineering for LLM APIs"
+        ],
+        "projects": [
+          { "title": "Movie Review Sentiment Analyzer", "description": "Fine-tune a BERT model on IMDb reviews and build a simple web UI to classify any movie review in real time." },
+          { "title": "News Article Topic Classifier", "description": "Scrape 1,000 news articles, label them by topic, train a TF-IDF + logistic regression vs BERT model, compare results." }
+        ],
         "resources": [
           { "title": "Hugging Face NLP Course", "url": "https://huggingface.co/learn/nlp-course/chapter1/1", "type": "course" },
           { "title": "spaCy Documentation", "url": "https://spacy.io/usage", "type": "documentation" },
@@ -341,6 +649,21 @@
         "title": "Computer Vision",
         "description": "Build image recognition, object detection, and segmentation systems using CNNs and OpenCV.",
         "order": 4,
+        "estimatedHours": 80,
+        "topics": [
+          "Image representation: pixels, channels, color spaces",
+          "OpenCV for image preprocessing and transformations",
+          "CNN architecture: Conv, Pool, Flatten, Dense layers",
+          "Object detection: YOLO, SSD, Faster R-CNN",
+          "Image segmentation: semantic vs instance (U-Net, Mask R-CNN)",
+          "Transfer learning: ResNet, EfficientNet, MobileNet",
+          "Data augmentation strategies",
+          "Model evaluation: mAP, IoU, precision-recall"
+        ],
+        "projects": [
+          { "title": "Face Mask Detection", "description": "Train a binary classifier on a face mask dataset, deploy it to process a live webcam stream with OpenCV." },
+          { "title": "Custom Object Detector", "description": "Collect 200+ images of a custom object, label them with LabelImg, train YOLOv8, and evaluate on a test video." }
+        ],
         "resources": [
           { "title": "CS231n - Convolutional Neural Networks", "url": "http://cs231n.stanford.edu/", "type": "course" },
           { "title": "OpenCV Documentation", "url": "https://docs.opencv.org/4.x/", "type": "documentation" },
@@ -355,6 +678,21 @@
         "title": "Generative AI & LLMs",
         "description": "Work with GPT, LLaMA, and diffusion models. Build applications using LangChain and vector databases.",
         "order": 5,
+        "estimatedHours": 80,
+        "topics": [
+          "Transformer architecture deep dive (attention, positional encoding)",
+          "Prompt engineering: few-shot, chain-of-thought, structured output",
+          "Fine-tuning vs retrieval-augmented generation (RAG)",
+          "LangChain and LlamaIndex for LLM orchestration",
+          "Vector databases: Pinecone, Weaviate, Chroma",
+          "Diffusion models: Stable Diffusion, DALL-E",
+          "LLM function calling and tool use",
+          "Evaluating LLM outputs: BLEU, ROUGE, human eval"
+        ],
+        "projects": [
+          { "title": "RAG Document Q&A Chatbot", "description": "Build a chatbot that answers questions about a PDF using LangChain, a vector DB, and an LLM API." },
+          { "title": "AI Code Review Tool", "description": "Create a GitHub Action that uses an LLM to review PRs, flag issues, and suggest improvements as PR comments." }
+        ],
         "resources": [
           { "title": "DeepLearning.AI - Generative AI", "url": "https://learn.deeplearning.ai/", "type": "course" },
           { "title": "LangChain Documentation", "url": "https://python.langchain.com/docs/get_started/introduction", "type": "documentation" },
@@ -369,6 +707,21 @@
         "title": "AI Ethics & Deployment",
         "description": "Understand AI ethics, bias, fairness, and deploy AI models responsibly using APIs and cloud services.",
         "order": 6,
+        "estimatedHours": 50,
+        "topics": [
+          "Algorithmic bias: sources, types, and measurement",
+          "Fairness metrics: demographic parity, equalized odds",
+          "Model explainability: LIME and SHAP",
+          "Privacy in AI: federated learning, differential privacy",
+          "Responsible AI frameworks (Google, Microsoft, EU AI Act)",
+          "Model serving with FastAPI and BentoML",
+          "API rate limiting, caching, and versioning",
+          "Monitoring model drift and data quality in production"
+        ],
+        "projects": [
+          { "title": "Fairness Audit", "description": "Take a loan approval classifier, measure fairness metrics across demographic groups, and propose mitigation strategies." },
+          { "title": "ML Model REST API", "description": "Wrap a trained scikit-learn model in a FastAPI service, Dockerize it, and deploy to a cloud platform with docs." }
+        ],
         "resources": [
           { "title": "AI Ethics - Fast.ai", "url": "https://ethics.fast.ai/", "type": "course" },
           { "title": "Google PAIR Guidebook", "url": "https://pair.withgoogle.com/guidebook/", "type": "documentation" },
@@ -394,6 +747,21 @@
         "title": "Security Fundamentals",
         "description": "Learn core security concepts — CIA triad, threat modeling, attack types, and security frameworks.",
         "order": 1,
+        "estimatedHours": 40,
+        "topics": [
+          "CIA triad: Confidentiality, Integrity, Availability",
+          "Common attack types: phishing, MitM, DDoS, ransomware",
+          "Threat modeling with STRIDE framework",
+          "Defense-in-depth strategy",
+          "Encryption basics: symmetric (AES) and asymmetric (RSA)",
+          "Hashing and salting for passwords",
+          "Security frameworks: NIST CSF, ISO 27001",
+          "Social engineering and human factors"
+        ],
+        "projects": [
+          { "title": "Personal Security Hardening", "description": "Set up a personal VPN, enable 2FA everywhere, audit your password manager, and document your security posture." },
+          { "title": "Threat Model for a Fictional Company", "description": "Apply the STRIDE framework to a small e-commerce app: identify assets, threats, mitigations, and residual risks." }
+        ],
         "resources": [
           { "title": "NIST Cybersecurity Framework", "url": "https://www.nist.gov/cyberframework", "type": "documentation" },
           { "title": "Cybersecurity Fundamentals - IBM (Coursera)", "url": "https://www.coursera.org/learn/ibm-cybersecurity-basics", "type": "course" },
@@ -409,6 +777,21 @@
         "title": "Networking & Protocols",
         "description": "Understand TCP/IP, DNS, HTTP/S, firewalls, VPNs, and how network attacks work.",
         "order": 2,
+        "estimatedHours": 50,
+        "topics": [
+          "OSI model and TCP/IP stack layer by layer",
+          "IP addressing, subnetting, and CIDR",
+          "DNS resolution, DNS poisoning attacks",
+          "HTTP/S: headers, cookies, TLS handshake",
+          "Common ports and services (22, 80, 443, 3306…)",
+          "Wireshark packet capture and analysis",
+          "Firewall rules and proxy servers",
+          "ARP spoofing and man-in-the-middle attacks"
+        ],
+        "projects": [
+          { "title": "Wireshark Packet Analysis", "description": "Capture traffic during a login, HTTP browse, and DNS query — analyze protocols, extract credentials from HTTP." },
+          { "title": "Home Network Map", "description": "Use nmap to scan your home network, identify all devices, open ports, and services — document your findings." }
+        ],
         "resources": [
           { "title": "Professor Messer's Network+", "url": "https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/", "type": "video" },
           { "title": "Wireshark Official Docs", "url": "https://www.wireshark.org/docs/", "type": "documentation" },
@@ -423,6 +806,21 @@
         "title": "Ethical Hacking & Pentesting",
         "description": "Learn penetration testing methodologies, vulnerability scanning, and exploit techniques ethically.",
         "order": 3,
+        "estimatedHours": 80,
+        "topics": [
+          "Pentest phases: recon, scanning, exploitation, post-exploitation, reporting",
+          "Passive recon: OSINT, Google dorking, Shodan",
+          "Active scanning with Nmap (flags, scripts, OS detection)",
+          "Vulnerability scanning with OpenVAS / Nessus",
+          "Metasploit framework: modules, payloads, sessions",
+          "Privilege escalation: Linux (SUID, sudo) and Windows",
+          "Password attacks: Hashcat and John the Ripper",
+          "Writing professional pentest reports"
+        ],
+        "projects": [
+          { "title": "TryHackMe CTF Room", "description": "Complete the Mr Robot or Blue room on TryHackMe — document every step, tool used, and flag captured." },
+          { "title": "HackTheBox Machine", "description": "Own a retired HackTheBox machine, write a detailed walkthrough including recon → foothold → root." }
+        ],
         "resources": [
           { "title": "TryHackMe - Jr Penetration Tester", "url": "https://tryhackme.com/path/outline/jrpenetrationtester", "type": "course" },
           { "title": "Hack The Box Academy", "url": "https://academy.hackthebox.com/", "type": "course" },
@@ -438,6 +836,21 @@
         "title": "Web Application Security",
         "description": "Master OWASP Top 10, SQL injection, XSS, CSRF, authentication flaws, and web app pentesting.",
         "order": 4,
+        "estimatedHours": 70,
+        "topics": [
+          "OWASP Top 10 (2021): injection, broken auth, IDOR, SSRF…",
+          "SQL injection: union-based, blind, time-based",
+          "XSS: reflected, stored, DOM-based — bypass filters",
+          "CSRF: attack mechanism and SameSite cookie defense",
+          "JWT vulnerabilities: alg:none, weak secrets, claim tampering",
+          "Burp Suite: Proxy, Repeater, Intruder, Scanner",
+          "Authentication flaws: brute force, credential stuffing",
+          "Secure coding: parameterized queries, output encoding, CSP"
+        ],
+        "projects": [
+          { "title": "PortSwigger Labs", "description": "Complete 10 Web Security Academy labs covering SQL injection, XSS, CSRF, and IDOR — screenshot each solved lab." },
+          { "title": "DVWA Exploitation", "description": "Attack Damn Vulnerable Web App at all 3 security levels, document every vulnerability and its fix." }
+        ],
         "resources": [
           { "title": "PortSwigger Web Security Academy (free)", "url": "https://portswigger.net/web-security", "type": "course" },
           { "title": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/", "type": "documentation" },
@@ -452,6 +865,21 @@
         "title": "Digital Forensics & Incident Response",
         "description": "Learn to investigate security incidents, analyze malware, and perform digital forensic analysis.",
         "order": 5,
+        "estimatedHours": 60,
+        "topics": [
+          "Incident response lifecycle: prepare, detect, contain, eradicate, recover",
+          "Digital forensics methodology and chain of custody",
+          "Memory analysis with Volatility",
+          "Disk imaging and acquisition (FTK Imager, dd)",
+          "Log analysis: Windows Event Log, syslog, SIEM basics",
+          "Static malware analysis: strings, PE headers, imports",
+          "Dynamic malware analysis: sandboxing (Any.run, Cuckoo)",
+          "Threat hunting with MITRE ATT&CK"
+        ],
+        "projects": [
+          { "title": "Memory Dump Analysis", "description": "Download a public malware memory dump, use Volatility to identify the malicious process, network connections, and IOCs." },
+          { "title": "TryHackMe SOC Simulation", "description": "Complete the SOC Level 1 path on TryHackMe — triage alerts, investigate incidents, and write an incident report." }
+        ],
         "resources": [
           { "title": "TryHackMe - SOC Level 1", "url": "https://tryhackme.com/path/outline/soclevel1", "type": "course" },
           { "title": "SANS DFIR Resources", "url": "https://www.sans.org/blog/", "type": "documentation" }
@@ -465,6 +893,21 @@
         "title": "Cloud Security & Compliance",
         "description": "Secure cloud environments, understand shared responsibility, and implement compliance frameworks.",
         "order": 6,
+        "estimatedHours": 55,
+        "topics": [
+          "Shared responsibility model in-depth (AWS, Azure, GCP)",
+          "IAM: least privilege, role boundaries, SCPs",
+          "AWS Security Hub, GuardDuty, and Inspector",
+          "Common cloud misconfigurations: SSRF, public S3, IMDSv1",
+          "GDPR and CCPA data privacy requirements",
+          "PCI-DSS and HIPAA overview for cloud",
+          "CloudTrail and Config for audit and compliance automation",
+          "Red team vs blue team exercises in cloud environments"
+        ],
+        "projects": [
+          { "title": "AWS Account Security Audit", "description": "Run Prowler or ScoutSuite against an AWS account, triage findings by severity, and remediate the top 5 issues." },
+          { "title": "S3 Bucket Policy Review", "description": "Enumerate S3 buckets in a test account, identify misconfigurations (public access, no encryption), and apply fixes." }
+        ],
         "resources": [
           { "title": "AWS Security Documentation", "url": "https://docs.aws.amazon.com/security/", "type": "documentation" },
           { "title": "CISA Cybersecurity Resources", "url": "https://www.cisa.gov/cybersecurity", "type": "documentation" }
