@@ -29,7 +29,7 @@ export default function Login() {
   };
 
   return (
-    <div className="dark min-h-[calc(100dvh-56px)] flex items-center justify-center px-4 py-12">
+    <div className="min-h-[calc(100dvh-56px)] flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-sm">
         {/* Header */}
         <div className="mb-8">

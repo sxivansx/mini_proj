@@ -40,7 +40,7 @@ export default function Register() {
   };
 
   return (
-    <div className="dark min-h-[calc(100dvh-56px)] flex items-center justify-center px-4 py-12">
+    <div className="min-h-[calc(100dvh-56px)] flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-sm">
         <div className="mb-8">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">// auth</p>

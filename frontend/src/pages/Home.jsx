@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* Radial glow at bottom (from shared component) */}
         <div
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 opacity-20 dark:opacity-30"
           style={{
             background: 'radial-gradient(125% 125% at 50% 10%, transparent 40%, var(--color-primary) 100%)',
           }}
