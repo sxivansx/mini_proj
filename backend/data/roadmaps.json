@@ -918,5 +918,850 @@
         ]
       }
     ]
+  },
+  {
+    "id": "mobile-development",
+    "title": "Mobile Development",
+    "description": "Build cross-platform mobile apps for iOS and Android using React Native, from core concepts to App Store deployment.",
+    "icon": "📱",
+    "color": "#10B981",
+    "level": "Intermediate",
+    "duration": "4-8 months",
+    "stages": [
+      {
+        "id": "mobile-1",
+        "title": "JavaScript & ES6+ Refresh",
+        "description": "Solidify the JavaScript and modern ES6+ skills you'll use daily in React Native — async patterns, modules, and destructuring.",
+        "order": 1,
+        "estimatedHours": 40,
+        "topics": [
+          "Arrow functions, destructuring, spread/rest operators",
+          "Promises, async/await, and error handling",
+          "ES modules: import/export",
+          "Array methods: map, filter, reduce",
+          "Optional chaining and nullish coalescing",
+          "Closures and scope",
+          "JSON manipulation"
+        ],
+        "projects": [
+          { "title": "Async Data Fetcher", "description": "Write a Node.js script that fetches data from a public API, handles errors gracefully, and formats the output." },
+          { "title": "Mini Utility Library", "description": "Build a collection of 10 reusable utility functions (debounce, deepClone, groupBy) using modern JS patterns." }
+        ],
+        "resources": [
+          { "title": "javascript.info - Modern JavaScript", "url": "https://javascript.info/", "type": "tutorial" },
+          { "title": "MDN JavaScript Reference", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript", "type": "documentation" },
+          { "title": "You Don't Know JS (free book)", "url": "https://github.com/getify/You-Dont-Know-JS", "type": "book" }
+        ],
+        "certifications": [
+          { "title": "freeCodeCamp JavaScript Algorithms & DS", "provider": "freeCodeCamp", "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/", "free": true }
+        ]
+      },
+      {
+        "id": "mobile-2",
+        "title": "React Native Fundamentals",
+        "description": "Learn the core building blocks of React Native — components, styling with StyleSheet, Flexbox layouts, and the Metro bundler.",
+        "order": 2,
+        "estimatedHours": 60,
+        "topics": [
+          "React Native vs React: similarities and differences",
+          "Core components: View, Text, Image, ScrollView, FlatList",
+          "StyleSheet API and Flexbox for mobile layouts",
+          "useState and useEffect hooks in a mobile context",
+          "Handling touch events: TouchableOpacity, Pressable",
+          "TextInput and form handling",
+          "Expo vs bare React Native workflow"
+        ],
+        "projects": [
+          { "title": "Recipe App UI", "description": "Build a static recipe browsing app with a list screen and detail screen using FlatList, Image, and ScrollView." },
+          { "title": "Tip Calculator", "description": "Create a tip calculator with live-updating total using TextInput, useState, and clean Flexbox layout." }
+        ],
+        "resources": [
+          { "title": "React Native Official Docs", "url": "https://reactnative.dev/docs/getting-started", "type": "documentation" },
+          { "title": "Expo Documentation", "url": "https://docs.expo.dev/", "type": "documentation" },
+          { "title": "React Native Express", "url": "https://www.reactnativeexpress.com/", "type": "tutorial" }
+        ]
+      },
+      {
+        "id": "mobile-3",
+        "title": "Navigation & State Management",
+        "description": "Implement multi-screen navigation with React Navigation and manage global app state using Context API or Zustand.",
+        "order": 3,
+        "estimatedHours": 50,
+        "topics": [
+          "Stack Navigator — push/pop screens",
+          "Tab Navigator — bottom tab bars",
+          "Drawer Navigator — side menus",
+          "Passing params between screens",
+          "Deep linking configuration",
+          "Context API for global state",
+          "Zustand — lightweight state management"
+        ],
+        "projects": [
+          { "title": "E-commerce App Shell", "description": "Build a 4-tab app (Home, Search, Cart, Profile) with stack navigation inside tabs and cart state shared globally." },
+          { "title": "Notes App", "description": "Create a notes app with list, detail, and create screens — persist notes in state across navigation." }
+        ],
+        "resources": [
+          { "title": "React Navigation Docs", "url": "https://reactnavigation.org/docs/getting-started", "type": "documentation" },
+          { "title": "Zustand GitHub", "url": "https://github.com/pmndrs/zustand", "type": "documentation" },
+          { "title": "React Navigation Crash Course - YouTube", "url": "https://www.youtube.com/watch?v=OmQCU-3KPms", "type": "video" }
+        ]
+      },
+      {
+        "id": "mobile-4",
+        "title": "Native APIs & Device Features",
+        "description": "Access device hardware and platform APIs — camera, location, notifications, storage, and gestures.",
+        "order": 4,
+        "estimatedHours": 45,
+        "topics": [
+          "AsyncStorage for persistent local data",
+          "expo-camera — capturing photos and video",
+          "expo-location — GPS coordinates and geofencing",
+          "Push notifications with expo-notifications",
+          "Gesture handling with react-native-gesture-handler",
+          "Animations with Animated API and Reanimated",
+          "Haptic feedback and device sensors"
+        ],
+        "projects": [
+          { "title": "Location Tracker", "description": "Build an app that tracks the user's GPS location in real time, displays it on a map, and logs a history of positions." },
+          { "title": "Camera Journal", "description": "Create a photo journal app that captures images with the camera, stores them locally, and displays them in a grid." }
+        ],
+        "resources": [
+          { "title": "Expo SDK API Reference", "url": "https://docs.expo.dev/versions/latest/", "type": "documentation" },
+          { "title": "React Native Gesture Handler Docs", "url": "https://docs.swmansion.com/react-native-gesture-handler/", "type": "documentation" },
+          { "title": "React Native Reanimated Docs", "url": "https://docs.swmansion.com/react-native-reanimated/", "type": "documentation" }
+        ]
+      },
+      {
+        "id": "mobile-5",
+        "title": "Backend Integration & Authentication",
+        "description": "Connect your app to REST APIs, handle JWT authentication, and store tokens securely on the device.",
+        "order": 5,
+        "estimatedHours": 40,
+        "topics": [
+          "Fetching data with fetch and Axios",
+          "JWT authentication flow in mobile apps",
+          "Secure token storage with expo-secure-store",
+          "Handling loading, error, and empty states",
+          "Optimistic UI updates",
+          "File uploads (images to server)",
+          "WebSocket real-time updates"
+        ],
+        "projects": [
+          { "title": "Full Auth Flow", "description": "Build a complete login/register/logout flow with JWT, secure token storage, and protected screens." },
+          { "title": "Social Feed App", "description": "Fetch posts from a REST API, implement infinite scroll with FlatList, and allow liking/commenting." }
+        ],
+        "resources": [
+          { "title": "Axios Documentation", "url": "https://axios-http.com/docs/intro", "type": "documentation" },
+          { "title": "expo-secure-store", "url": "https://docs.expo.dev/versions/latest/sdk/securestore/", "type": "documentation" },
+          { "title": "TanStack Query for React Native", "url": "https://tanstack.com/query/latest/docs/framework/react/react-native", "type": "documentation" }
+        ]
+      },
+      {
+        "id": "mobile-6",
+        "title": "Publishing & App Store Deployment",
+        "description": "Build production binaries, configure app signing, and submit your app to the Apple App Store and Google Play Store.",
+        "order": 6,
+        "estimatedHours": 30,
+        "topics": [
+          "EAS Build — cloud builds for iOS and Android",
+          "App signing: certificates and keystores",
+          "App Store Connect setup and submission",
+          "Google Play Console setup and submission",
+          "App icons, splash screens, and metadata",
+          "Over-the-air (OTA) updates with EAS Update",
+          "Crash reporting with Sentry"
+        ],
+        "projects": [
+          { "title": "Publish a Real App", "description": "Take any app you've built, create proper store listings with screenshots and descriptions, and submit to both stores." }
+        ],
+        "resources": [
+          { "title": "EAS Build Documentation", "url": "https://docs.expo.dev/build/introduction/", "type": "documentation" },
+          { "title": "App Store Review Guidelines", "url": "https://developer.apple.com/app-store/review/guidelines/", "type": "documentation" },
+          { "title": "Google Play Console Help", "url": "https://support.google.com/googleplay/android-developer/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "Meta React Native Specialization", "provider": "Coursera / Meta", "url": "https://www.coursera.org/specializations/meta-react-native", "free": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "devops",
+    "title": "DevOps Engineering",
+    "description": "Master the tools and practices of modern DevOps — Linux, Docker, Kubernetes, CI/CD pipelines, and cloud infrastructure.",
+    "icon": "⚙️",
+    "color": "#F59E0B",
+    "level": "Intermediate to Advanced",
+    "duration": "6-10 months",
+    "stages": [
+      {
+        "id": "devops-1",
+        "title": "Linux & Command Line",
+        "description": "Get comfortable with the Linux command line — file systems, permissions, process management, shell scripting, and networking basics.",
+        "order": 1,
+        "estimatedHours": 50,
+        "topics": [
+          "File system navigation: ls, cd, mkdir, rm, cp, mv",
+          "File permissions: chmod, chown, umask",
+          "Process management: ps, top, kill, systemctl",
+          "Package managers: apt, yum, brew",
+          "Bash scripting: variables, loops, conditionals, functions",
+          "SSH: key-based auth, config file, port forwarding",
+          "Networking: curl, wget, netstat, nmap basics"
+        ],
+        "projects": [
+          { "title": "Server Setup Script", "description": "Write a Bash script that automates a fresh Ubuntu server setup: updates packages, creates a user, sets up SSH keys, and configures a firewall." },
+          { "title": "Log Analyzer", "description": "Build a shell script that parses Nginx access logs, counts requests per IP, identifies 4xx/5xx errors, and outputs a summary report." }
+        ],
+        "resources": [
+          { "title": "The Linux Command Line (free book)", "url": "https://linuxcommand.org/tlcl.php", "type": "book" },
+          { "title": "OverTheWire: Bandit (Linux wargame)", "url": "https://overthewire.org/wargames/bandit/", "type": "tutorial" },
+          { "title": "Linux Journey", "url": "https://linuxjourney.com/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Linux Foundation LFS101", "provider": "Linux Foundation", "url": "https://training.linuxfoundation.org/training/introduction-to-linux/", "free": true }
+        ]
+      },
+      {
+        "id": "devops-2",
+        "title": "Git & CI/CD Pipelines",
+        "description": "Master Git workflows and build automated pipelines with GitHub Actions to test, build, and deploy code on every push.",
+        "order": 2,
+        "estimatedHours": 40,
+        "topics": [
+          "Git branching strategies: Gitflow, trunk-based",
+          "Pull requests, code reviews, and merge strategies",
+          "GitHub Actions: workflow syntax, jobs, steps",
+          "Triggers: push, pull_request, schedule, workflow_dispatch",
+          "Secrets and environment variables in CI",
+          "Caching dependencies for faster pipelines",
+          "Multi-environment deployments: dev, staging, prod"
+        ],
+        "projects": [
+          { "title": "Node.js CI Pipeline", "description": "Set up a GitHub Actions workflow that lints, tests, and builds a Node.js app on every PR — block merges if checks fail." },
+          { "title": "Auto-Deploy to Render", "description": "Extend the pipeline to auto-deploy to Render on merge to main, with rollback on failed health check." }
+        ],
+        "resources": [
+          { "title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions", "type": "documentation" },
+          { "title": "GitHub Skills - CI/CD", "url": "https://skills.github.com/", "type": "course" },
+          { "title": "act - Run GitHub Actions Locally", "url": "https://github.com/nektos/act", "type": "tool" }
+        ],
+        "certifications": [
+          { "title": "GitHub Actions Certification", "provider": "GitHub", "url": "https://examregistration.github.com/certification/ACTIONS", "free": false }
+        ]
+      },
+      {
+        "id": "devops-3",
+        "title": "Docker & Containerization",
+        "description": "Package applications into containers with Docker, write Dockerfiles, and orchestrate multi-service apps with Docker Compose.",
+        "order": 3,
+        "estimatedHours": 55,
+        "topics": [
+          "Container vs VM: why containers",
+          "Dockerfile: FROM, RUN, COPY, EXPOSE, CMD, ENTRYPOINT",
+          "Image layers and build cache optimization",
+          "Volumes and bind mounts for data persistence",
+          "Docker networking: bridge, host, overlay",
+          "Docker Compose: multi-container apps, depends_on",
+          "Docker Hub and private registries"
+        ],
+        "projects": [
+          { "title": "Containerize a Full-Stack App", "description": "Write Dockerfiles for a Node.js API and React frontend, then orchestrate them with Docker Compose alongside a MongoDB container." },
+          { "title": "Multi-Stage Build", "description": "Optimize a Docker image using multi-stage builds to reduce final image size from 1GB+ to under 100MB." }
+        ],
+        "resources": [
+          { "title": "Docker Official Documentation", "url": "https://docs.docker.com/get-started/", "type": "documentation" },
+          { "title": "Play with Docker (browser lab)", "url": "https://labs.play-with-docker.com/", "type": "tool" },
+          { "title": "Docker Deep Dive by Nigel Poulton", "url": "https://www.amazon.com/Docker-Deep-Dive-Nigel-Poulton/dp/1916585256", "type": "book" }
+        ],
+        "certifications": [
+          { "title": "Docker Certified Associate", "provider": "Docker", "url": "https://training.mirantis.com/certification/dca-certification-exam/", "free": false }
+        ]
+      },
+      {
+        "id": "devops-4",
+        "title": "Kubernetes & Orchestration",
+        "description": "Deploy and manage containerized workloads at scale with Kubernetes — pods, services, deployments, and Helm charts.",
+        "order": 4,
+        "estimatedHours": 70,
+        "topics": [
+          "Kubernetes architecture: control plane, nodes, etcd",
+          "Pods, ReplicaSets, Deployments, and StatefulSets",
+          "Services: ClusterIP, NodePort, LoadBalancer",
+          "ConfigMaps and Secrets",
+          "Persistent Volumes and PersistentVolumeClaims",
+          "Ingress controllers and TLS termination",
+          "Helm: package manager for Kubernetes"
+        ],
+        "projects": [
+          { "title": "Deploy App to Minikube", "description": "Deploy a 3-tier app (frontend, API, database) on a local Minikube cluster with proper services, configmaps, and secrets." },
+          { "title": "Helm Chart", "description": "Write a Helm chart for your app that supports different values for dev/prod environments." }
+        ],
+        "resources": [
+          { "title": "Kubernetes Official Documentation", "url": "https://kubernetes.io/docs/home/", "type": "documentation" },
+          { "title": "Killer.sh CKA Practice", "url": "https://killer.sh/", "type": "tool" },
+          { "title": "Kubernetes by Example", "url": "https://kubernetesbyexample.com/", "type": "tutorial" }
+        ],
+        "certifications": [
+          { "title": "Certified Kubernetes Administrator (CKA)", "provider": "CNCF / Linux Foundation", "url": "https://www.cncf.io/certification/cka/", "free": false }
+        ]
+      },
+      {
+        "id": "devops-5",
+        "title": "Cloud Platforms & Infrastructure as Code",
+        "description": "Provision and manage cloud infrastructure on AWS using Terraform and understand core cloud services.",
+        "order": 5,
+        "estimatedHours": 65,
+        "topics": [
+          "AWS core services: EC2, S3, RDS, VPC, IAM",
+          "Serverless: AWS Lambda and API Gateway",
+          "Terraform: providers, resources, state, modules",
+          "Infrastructure as Code principles",
+          "Cloud networking: subnets, security groups, NAT",
+          "Auto Scaling and Load Balancers",
+          "Cost optimization strategies"
+        ],
+        "projects": [
+          { "title": "Terraform AWS Infrastructure", "description": "Write Terraform to provision a VPC, EC2 instance, RDS database, and S3 bucket with proper IAM roles." },
+          { "title": "Serverless API", "description": "Build and deploy a REST API using AWS Lambda + API Gateway + DynamoDB — no servers to manage." }
+        ],
+        "resources": [
+          { "title": "AWS Free Tier", "url": "https://aws.amazon.com/free/", "type": "tool" },
+          { "title": "Terraform Documentation", "url": "https://developer.hashicorp.com/terraform/docs", "type": "documentation" },
+          { "title": "AWS Skill Builder (free)", "url": "https://skillbuilder.aws/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "AWS Certified Solutions Architect – Associate", "provider": "Amazon Web Services", "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/", "free": false }
+        ]
+      },
+      {
+        "id": "devops-6",
+        "title": "Monitoring, Logging & Reliability",
+        "description": "Implement observability for production systems using Prometheus, Grafana, and the ELK stack. Define SLOs and on-call practices.",
+        "order": 6,
+        "estimatedHours": 45,
+        "topics": [
+          "The three pillars: metrics, logs, traces",
+          "Prometheus: scraping, PromQL, alerting rules",
+          "Grafana: dashboards, panels, data sources",
+          "ELK Stack: Elasticsearch, Logstash, Kibana",
+          "Distributed tracing with OpenTelemetry and Jaeger",
+          "SLIs, SLOs, and error budgets",
+          "Incident management and postmortem culture"
+        ],
+        "projects": [
+          { "title": "Grafana Dashboard", "description": "Set up Prometheus + Grafana with Docker Compose to monitor a Node.js app — track request rate, error rate, and latency (RED method)." },
+          { "title": "Centralized Logging", "description": "Ship application logs to an ELK stack, create Kibana visualizations, and set up alerts for error spikes." }
+        ],
+        "resources": [
+          { "title": "Prometheus Documentation", "url": "https://prometheus.io/docs/introduction/overview/", "type": "documentation" },
+          { "title": "Grafana Labs Learn", "url": "https://grafana.com/learn/", "type": "tutorial" },
+          { "title": "Google SRE Book (free)", "url": "https://sre.google/sre-book/table-of-contents/", "type": "book" }
+        ],
+        "certifications": [
+          { "title": "Grafana Certified Associate", "provider": "Grafana Labs", "url": "https://grafana.com/training/", "free": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "game-development",
+    "title": "Game Development",
+    "description": "Create 2D and 3D games from scratch using Unity and C# — from core mechanics to publishing on Steam and mobile stores.",
+    "icon": "🎮",
+    "color": "#8B5CF6",
+    "level": "Beginner to Intermediate",
+    "duration": "6-12 months",
+    "stages": [
+      {
+        "id": "game-1",
+        "title": "C# Programming Fundamentals",
+        "description": "Learn C# — the primary language for Unity development — covering OOP, collections, and the patterns used in game code.",
+        "order": 1,
+        "estimatedHours": 55,
+        "topics": [
+          "Variables, data types, and type casting",
+          "Control flow: if, switch, for, while, foreach",
+          "Classes, objects, constructors, and inheritance",
+          "Interfaces and abstract classes",
+          "Lists, arrays, and dictionaries",
+          "Properties, enums, and structs",
+          "Basic design patterns: Singleton, Observer"
+        ],
+        "projects": [
+          { "title": "Text Adventure Game", "description": "Build a dungeon crawler text game in the console with rooms, inventory, enemies, and a win/lose condition." },
+          { "title": "Bank Account Simulator", "description": "Model a bank with accounts, transactions, and inheritance (SavingsAccount, CheckingAccount) using OOP principles." }
+        ],
+        "resources": [
+          { "title": "Microsoft C# Documentation", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/", "type": "documentation" },
+          { "title": "C# Player's Guide (book)", "url": "https://csharpplayersguide.com/", "type": "book" },
+          { "title": "freeCodeCamp C# Certification", "url": "https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Foundational C# with Microsoft", "provider": "freeCodeCamp / Microsoft", "url": "https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/", "free": true }
+        ]
+      },
+      {
+        "id": "game-2",
+        "title": "Unity Engine Fundamentals",
+        "description": "Get comfortable in the Unity Editor — scenes, GameObjects, components, the Inspector, and the core game loop.",
+        "order": 2,
+        "estimatedHours": 50,
+        "topics": [
+          "Unity Editor layout: Scene, Game, Hierarchy, Inspector, Project",
+          "GameObjects and the Component pattern",
+          "Transform: position, rotation, scale",
+          "MonoBehaviour lifecycle: Awake, Start, Update, FixedUpdate",
+          "Prefabs — reusable GameObjects",
+          "Materials, Sprites, and basic rendering",
+          "Input System — keyboard, mouse, controller"
+        ],
+        "projects": [
+          { "title": "Catch the Falling Objects", "description": "Build a simple game where a basket catches falling objects — practice spawning, destroying, and basic collision." },
+          { "title": "Click Counter Game", "description": "Create a UI-driven click counter with score, timer, and a game-over screen using Unity's Canvas system." }
+        ],
+        "resources": [
+          { "title": "Unity Learn - Unity Essentials", "url": "https://learn.unity.com/pathway/unity-essentials", "type": "course" },
+          { "title": "Unity Documentation", "url": "https://docs.unity3d.com/Manual/index.html", "type": "documentation" },
+          { "title": "Brackeys YouTube Channel", "url": "https://www.youtube.com/@Brackeys", "type": "video" }
+        ]
+      },
+      {
+        "id": "game-3",
+        "title": "2D Game Development",
+        "description": "Build complete 2D games using sprites, Tilemap, Rigidbody2D, colliders, and Unity's animation system.",
+        "order": 3,
+        "estimatedHours": 70,
+        "topics": [
+          "Sprite importing, slicing, and atlas packing",
+          "Tilemap and Tile Palette for level design",
+          "Rigidbody2D and 2D Colliders",
+          "2D platformer controller: movement, jumping, coyote time",
+          "Animator and Animation Clips",
+          "Camera follow with Cinemachine",
+          "Scene management and game states"
+        ],
+        "projects": [
+          { "title": "2D Platformer", "description": "Build a complete platformer with a character that runs, jumps, and collects coins across 3 levels with checkpoints." },
+          { "title": "Top-Down Shooter", "description": "Create a top-down twin-stick shooter with enemy AI, projectiles, health system, and wave-based spawning." }
+        ],
+        "resources": [
+          { "title": "Unity Learn - 2D Pathways", "url": "https://learn.unity.com/pathway/junior-programmer", "type": "course" },
+          { "title": "Cinemachine Documentation", "url": "https://docs.unity3d.com/Packages/com.unity.cinemachine@latest", "type": "documentation" },
+          { "title": "itch.io Free 2D Assets", "url": "https://itch.io/game-assets/free/tag-2d", "type": "tool" }
+        ]
+      },
+      {
+        "id": "game-4",
+        "title": "Physics, Audio & UI",
+        "description": "Add depth to your games with realistic physics, responsive audio, and polished UI screens using Unity's built-in systems.",
+        "order": 4,
+        "estimatedHours": 45,
+        "topics": [
+          "Physics materials: friction, bounciness",
+          "Joints: HingeJoint, SpringJoint, FixedJoint",
+          "Raycasting and layer masks",
+          "AudioSource, AudioClip, AudioMixer",
+          "Spatial audio and sound effects vs music",
+          "UI Canvas: anchors, panels, buttons, sliders",
+          "PlayerPrefs for saving high scores and settings"
+        ],
+        "projects": [
+          { "title": "Physics Puzzle Game", "description": "Build an Angry Birds-style physics puzzle with breakable structures, ragdoll objects, and a slingshot mechanic." },
+          { "title": "Full UI System", "description": "Add a complete UI to an existing game: main menu, pause menu, settings (audio sliders), and a leaderboard screen." }
+        ],
+        "resources": [
+          { "title": "Unity Audio Manual", "url": "https://docs.unity3d.com/Manual/AudioOverview.html", "type": "documentation" },
+          { "title": "Unity UI Toolkit Docs", "url": "https://docs.unity3d.com/Manual/UIElements.html", "type": "documentation" },
+          { "title": "freesound.org", "url": "https://freesound.org/", "type": "tool" }
+        ]
+      },
+      {
+        "id": "game-5",
+        "title": "3D Game Development",
+        "description": "Move into 3D with ProBuilder, NavMesh AI, lighting, shaders, and building a complete 3D game experience.",
+        "order": 5,
+        "estimatedHours": 75,
+        "topics": [
+          "3D transforms, meshes, and materials",
+          "Character Controller vs Rigidbody for 3D movement",
+          "ProBuilder for 3D level design in-engine",
+          "NavMesh and NavMeshAgent for pathfinding AI",
+          "Lighting: directional, point, spot, baked vs real-time",
+          "Shaders and Shader Graph basics",
+          "Particle System — effects, trails, explosions"
+        ],
+        "projects": [
+          { "title": "3D Maze Game", "description": "Build a 3D first-person maze with NavMesh-driven enemy that chases the player, with a timer and escape objective." },
+          { "title": "Third-Person Action Game", "description": "Create a 3D third-person game with camera control, melee combat, enemy AI, and an arena-style level." }
+        ],
+        "resources": [
+          { "title": "Unity Learn - 3D Game Development", "url": "https://learn.unity.com/course/create-with-code", "type": "course" },
+          { "title": "Shader Graph Documentation", "url": "https://docs.unity3d.com/Packages/com.unity.shadergraph@latest", "type": "documentation" },
+          { "title": "Kenney.nl Free 3D Assets", "url": "https://kenney.nl/assets", "type": "tool" }
+        ]
+      },
+      {
+        "id": "game-6",
+        "title": "Publishing & Monetization",
+        "description": "Optimize, build, and ship your game to PC (Steam), web (itch.io), and mobile — including monetization basics.",
+        "order": 6,
+        "estimatedHours": 35,
+        "topics": [
+          "Profiler: finding CPU and GPU bottlenecks",
+          "Occlusion culling and LOD Groups",
+          "Build settings for PC, WebGL, iOS, Android",
+          "Steamworks SDK basics and Steam Direct publishing",
+          "itch.io game pages and HTML5 WebGL export",
+          "Mobile ads with Unity Ads and in-app purchases",
+          "Crash reporting with Unity Cloud Diagnostics"
+        ],
+        "projects": [
+          { "title": "Publish on itch.io", "description": "Polish and publish a complete game to itch.io with a WebGL build, cover image, screenshots, and a clear description." }
+        ],
+        "resources": [
+          { "title": "Unity Build Settings Docs", "url": "https://docs.unity3d.com/Manual/BuildSettings.html", "type": "documentation" },
+          { "title": "Steamworks Documentation", "url": "https://partner.steamgames.com/doc/home", "type": "documentation" },
+          { "title": "itch.io Creator Docs", "url": "https://itch.io/docs/creators/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "Unity Certified Associate: Game Developer", "provider": "Unity Technologies", "url": "https://unity.com/products/unity-certifications", "free": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "blockchain",
+    "title": "Blockchain & Web3",
+    "description": "Build decentralized applications on Ethereum — smart contracts with Solidity, DeFi protocols, and Web3 frontends.",
+    "icon": "⛓️",
+    "color": "#06B6D4",
+    "level": "Intermediate to Advanced",
+    "duration": "4-8 months",
+    "stages": [
+      {
+        "id": "blockchain-1",
+        "title": "Blockchain Fundamentals",
+        "description": "Understand how blockchains work — consensus mechanisms, cryptographic primitives, wallets, and the Ethereum ecosystem.",
+        "order": 1,
+        "estimatedHours": 35,
+        "topics": [
+          "How a blockchain works: blocks, hashes, and chains",
+          "Consensus mechanisms: PoW vs PoS",
+          "Public/private key cryptography and digital signatures",
+          "Wallets: EOA vs contract accounts",
+          "Gas, transactions, and the mempool",
+          "Ethereum vs other L1s: Solana, Avalanche",
+          "Layer 2 solutions: Optimism, Arbitrum, zkSync"
+        ],
+        "projects": [
+          { "title": "Blockchain Explorer Analysis", "description": "Use Etherscan to trace 5 real transactions from inception to finality — decode input data, gas costs, and state changes." },
+          { "title": "Crypto Wallet Setup", "description": "Set up MetaMask, connect to testnets, get test ETH from a faucet, and send your first transactions." }
+        ],
+        "resources": [
+          { "title": "Ethereum.org Learn Hub", "url": "https://ethereum.org/en/learn/", "type": "documentation" },
+          { "title": "Mastering Ethereum (free book)", "url": "https://github.com/ethereumbook/ethereumbook", "type": "book" },
+          { "title": "Binance Academy", "url": "https://academy.binance.com/en", "type": "tutorial" }
+        ]
+      },
+      {
+        "id": "blockchain-2",
+        "title": "Solidity & Smart Contracts",
+        "description": "Write, test, and deploy Solidity smart contracts — data types, state variables, events, modifiers, and security pitfalls.",
+        "order": 2,
+        "estimatedHours": 65,
+        "topics": [
+          "Solidity syntax: types, functions, visibility, state variables",
+          "Constructors, fallback, and receive functions",
+          "Events and indexed parameters",
+          "Inheritance and interfaces",
+          "Mappings, arrays, and structs",
+          "Common vulnerabilities: reentrancy, overflow, access control",
+          "OpenZeppelin contracts library"
+        ],
+        "projects": [
+          { "title": "Voting Contract", "description": "Build a transparent on-chain voting system — add candidates, vote once per address, emit events, and tally results." },
+          { "title": "ERC-20 Token", "description": "Deploy your own ERC-20 token using OpenZeppelin with minting, burning, and a custom supply cap." }
+        ],
+        "resources": [
+          { "title": "Solidity Documentation", "url": "https://docs.soliditylang.org/", "type": "documentation" },
+          { "title": "CryptoZombies - Learn Solidity", "url": "https://cryptozombies.io/", "type": "tutorial" },
+          { "title": "OpenZeppelin Contracts Docs", "url": "https://docs.openzeppelin.com/contracts/", "type": "documentation" }
+        ],
+        "certifications": [
+          { "title": "Ethereum Developer Certification", "provider": "Alchemy University", "url": "https://university.alchemy.com/", "free": true }
+        ]
+      },
+      {
+        "id": "blockchain-3",
+        "title": "Development Tooling",
+        "description": "Use professional-grade tools — Hardhat and Foundry — to compile, test, debug, and deploy smart contracts reliably.",
+        "order": 3,
+        "estimatedHours": 50,
+        "topics": [
+          "Hardhat: compilation, local node, console, plugins",
+          "Writing unit tests with ethers.js and chai",
+          "Foundry: forge test, fuzz testing, invariants",
+          "Deployment scripts and verify on Etherscan",
+          "Environment variables for private keys",
+          "Testnets: Sepolia, Goerli — faucets and RPCs",
+          "Alchemy and Infura as RPC providers"
+        ],
+        "projects": [
+          { "title": "Full Test Suite", "description": "Write comprehensive Hardhat tests for your ERC-20 token covering all edge cases — aim for 100% branch coverage." },
+          { "title": "Deploy to Testnet", "description": "Write a deployment script, deploy your voting contract to Sepolia, and verify the source code on Etherscan." }
+        ],
+        "resources": [
+          { "title": "Hardhat Documentation", "url": "https://hardhat.org/docs", "type": "documentation" },
+          { "title": "Foundry Book", "url": "https://book.getfoundry.sh/", "type": "book" },
+          { "title": "Alchemy Road to Web3", "url": "https://www.alchemy.com/road-to-web3", "type": "tutorial" }
+        ]
+      },
+      {
+        "id": "blockchain-4",
+        "title": "DeFi & Token Standards",
+        "description": "Understand the DeFi stack — AMMs, lending protocols, NFTs, and the token standards that power them.",
+        "order": 4,
+        "estimatedHours": 55,
+        "topics": [
+          "ERC-20: fungible tokens — approve, transferFrom",
+          "ERC-721: NFTs — tokenURI, metadata, royalties",
+          "ERC-1155: multi-token standard",
+          "AMMs: Uniswap V2 mechanics, x*y=k formula",
+          "Lending: Aave and Compound architecture",
+          "Flash loans — uncollateralized, atomic borrowing",
+          "IPFS for decentralized NFT metadata storage"
+        ],
+        "projects": [
+          { "title": "NFT Collection", "description": "Deploy an ERC-721 NFT collection with on-chain metadata, a mint function, and a royalty standard." },
+          { "title": "Mini AMM", "description": "Build a simplified Uniswap V2-style AMM in Solidity with add/remove liquidity and token swap functions." }
+        ],
+        "resources": [
+          { "title": "Uniswap V2 Whitepaper", "url": "https://uniswap.org/whitepaper.pdf", "type": "documentation" },
+          { "title": "OpenZeppelin ERC Standards", "url": "https://docs.openzeppelin.com/contracts/4.x/tokens", "type": "documentation" },
+          { "title": "Pinata IPFS Docs", "url": "https://docs.pinata.cloud/", "type": "documentation" }
+        ]
+      },
+      {
+        "id": "blockchain-5",
+        "title": "Web3 Frontend",
+        "description": "Connect React apps to the blockchain using ethers.js and wagmi — read state, send transactions, and handle wallets.",
+        "order": 5,
+        "estimatedHours": 50,
+        "topics": [
+          "ethers.js v6: providers, signers, contracts",
+          "wagmi and RainbowKit for wallet connection UI",
+          "Reading contract state: call vs staticCall",
+          "Writing transactions: gas estimation and confirmation",
+          "Listening to contract events in the frontend",
+          "Handling chain switching and wrong network",
+          "The Graph — indexing blockchain events with GraphQL"
+        ],
+        "projects": [
+          { "title": "NFT Minting DApp", "description": "Build a React frontend for your NFT collection with wallet connect, mint button, and a gallery of minted tokens." },
+          { "title": "Token Dashboard", "description": "Create a dashboard that shows a user's ERC-20 token balance, allows transfers, and displays transaction history." }
+        ],
+        "resources": [
+          { "title": "ethers.js Documentation", "url": "https://docs.ethers.org/v6/", "type": "documentation" },
+          { "title": "wagmi Documentation", "url": "https://wagmi.sh/", "type": "documentation" },
+          { "title": "The Graph Documentation", "url": "https://thegraph.com/docs/en/", "type": "documentation" }
+        ]
+      },
+      {
+        "id": "blockchain-6",
+        "title": "Smart Contract Security & Auditing",
+        "description": "Learn to find and fix vulnerabilities in smart contracts — reentrancy, oracle manipulation, MEV, and audit methodology.",
+        "order": 6,
+        "estimatedHours": 60,
+        "topics": [
+          "Reentrancy attacks and the checks-effects-interactions pattern",
+          "Integer overflow/underflow (pre and post Solidity 0.8)",
+          "Access control flaws and tx.origin misuse",
+          "Oracle manipulation and price feed attacks",
+          "MEV: front-running, sandwich attacks",
+          "Slither and Mythril for automated analysis",
+          "Audit report structure and severity classifications"
+        ],
+        "projects": [
+          { "title": "CTF Challenges", "description": "Complete 10 Ethernaut CTF challenges — each exploits a real vulnerability pattern found in production contracts." },
+          { "title": "Security Audit Report", "description": "Audit a small open-source DeFi contract, write a full report with findings, severity ratings, and recommended fixes." }
+        ],
+        "resources": [
+          { "title": "Ethernaut CTF", "url": "https://ethernaut.openzeppelin.com/", "type": "tutorial" },
+          { "title": "Smart Contract Security Verification Standard", "url": "https://github.com/securing/SCSVS", "type": "documentation" },
+          { "title": "Cyfrin Updraft Security Course", "url": "https://updraft.cyfrin.io/", "type": "course" }
+        ],
+        "certifications": [
+          { "title": "Certified Smart Contract Auditor", "provider": "Cyfrin", "url": "https://updraft.cyfrin.io/", "free": true }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ui-ux-design",
+    "title": "UI/UX Design",
+    "description": "Learn to design beautiful, user-centered digital products — from research and wireframes to polished Figma prototypes and design systems.",
+    "icon": "🎨",
+    "color": "#EC4899",
+    "level": "Beginner to Intermediate",
+    "duration": "3-6 months",
+    "stages": [
+      {
+        "id": "uiux-1",
+        "title": "Design Fundamentals",
+        "description": "Master the visual grammar of design — typography, color theory, spacing, grid systems, and the principles of visual hierarchy.",
+        "order": 1,
+        "estimatedHours": 35,
+        "topics": [
+          "Visual hierarchy: size, weight, contrast, color",
+          "Typography: typefaces, pairing, scale, line-height",
+          "Color theory: hue, saturation, value, and color models",
+          "Spacing systems: 4px / 8px base grids",
+          "Gestalt principles: proximity, similarity, continuity",
+          "Layout grids: columns, gutters, margins",
+          "Contrast and accessibility: WCAG AA/AAA"
+        ],
+        "projects": [
+          { "title": "Design Teardown", "description": "Pick 3 well-designed apps (e.g., Linear, Airbnb, Notion) and write a critique of their typography, color, spacing, and hierarchy." },
+          { "title": "Style Tile", "description": "Create a style tile in Figma with a chosen color palette, type scale, icon set, and 5 component examples." }
+        ],
+        "resources": [
+          { "title": "Refactoring UI (book)", "url": "https://www.refactoringui.com/", "type": "book" },
+          { "title": "Google Fonts Knowledge", "url": "https://fonts.google.com/knowledge", "type": "tutorial" },
+          { "title": "Coolors — Color Palette Generator", "url": "https://coolors.co/", "type": "tool" }
+        ]
+      },
+      {
+        "id": "uiux-2",
+        "title": "User Research & UX Principles",
+        "description": "Understand your users through research methods — interviews, surveys, and usability testing — and apply core UX heuristics.",
+        "order": 2,
+        "estimatedHours": 40,
+        "topics": [
+          "UX research methods: interviews, surveys, contextual inquiry",
+          "Affinity mapping and synthesizing findings",
+          "User personas and jobs-to-be-done",
+          "User journey maps and service blueprints",
+          "Nielsen's 10 usability heuristics",
+          "Information architecture: card sorting, tree testing",
+          "Accessibility: WCAG 2.1, screen readers, keyboard nav"
+        ],
+        "projects": [
+          { "title": "User Research Study", "description": "Conduct 5 user interviews about a common problem (e.g., expense tracking), synthesize findings into an affinity map and 2 personas." },
+          { "title": "Heuristic Evaluation", "description": "Run a heuristic evaluation on an existing app using Nielsen's 10 heuristics — document findings with screenshots and severity ratings." }
+        ],
+        "resources": [
+          { "title": "Nielsen Norman Group Articles", "url": "https://www.nngroup.com/articles/", "type": "documentation" },
+          { "title": "Google UX Design Certificate", "url": "https://grow.google/certificates/ux-design/", "type": "course" },
+          { "title": "UX Research Cheat Sheet - NNG", "url": "https://www.nngroup.com/articles/ux-research-cheat-sheet/", "type": "tutorial" }
+        ],
+        "certifications": [
+          { "title": "Google UX Design Certificate", "provider": "Google / Coursera", "url": "https://grow.google/certificates/ux-design/", "free": false }
+        ]
+      },
+      {
+        "id": "uiux-3",
+        "title": "Wireframing & Prototyping",
+        "description": "Rapidly translate ideas into low and mid-fidelity wireframes, then build interactive prototypes to test with real users.",
+        "order": 3,
+        "estimatedHours": 45,
+        "topics": [
+          "Lo-fi wireframing: pen-and-paper and digital grayscale",
+          "Mid-fi wireframes with real content and layout",
+          "Information hierarchy in wireframes",
+          "Figma prototyping: frames, connections, transitions",
+          "Micro-interactions: hover states, loading, empty states",
+          "Mobile-first design approach",
+          "Usability testing with prototypes: think-aloud protocol"
+        ],
+        "projects": [
+          { "title": "App Wireframe", "description": "Wireframe a 10-screen mobile app (onboarding → main feature → settings) in Figma from lo-fi to mid-fi." },
+          { "title": "Clickable Prototype Test", "description": "Build a clickable Figma prototype, run it through 3 usability tests, and document what broke and what worked." }
+        ],
+        "resources": [
+          { "title": "Figma Prototyping Docs", "url": "https://help.figma.com/hc/en-us/categories/360002051613-Prototyping", "type": "documentation" },
+          { "title": "Maze — Usability Testing Tool", "url": "https://maze.co/", "type": "tool" },
+          { "title": "Balsamiq Wireframing Guide", "url": "https://balsamiq.com/learn/", "type": "tutorial" }
+        ]
+      },
+      {
+        "id": "uiux-4",
+        "title": "Figma Mastery",
+        "description": "Level up your Figma skills — Auto Layout, components with variants, styles, variables, and advanced prototyping.",
+        "order": 4,
+        "estimatedHours": 50,
+        "topics": [
+          "Auto Layout: horizontal, vertical, wrap, gap",
+          "Components: creating, nesting, and overrides",
+          "Variants and component properties",
+          "Styles: color, text, and effect styles",
+          "Variables for theming and design tokens",
+          "Advanced prototyping: overlays, scroll behavior, variables",
+          "Figma Dev Mode for handoff to engineers"
+        ],
+        "projects": [
+          { "title": "Component Library", "description": "Build a mini component library in Figma: buttons (5 states), inputs (4 states), cards, badges, and a modal — all with Auto Layout." },
+          { "title": "Dark Mode Toggle", "description": "Use Figma Variables to create a design that switches between light and dark mode with a single click." }
+        ],
+        "resources": [
+          { "title": "Figma Help Center", "url": "https://help.figma.com/hc/en-us", "type": "documentation" },
+          { "title": "Figma YouTube Channel", "url": "https://www.youtube.com/@Figma", "type": "video" },
+          { "title": "UI Prep — Figma Challenges", "url": "https://www.uiprep.com/", "type": "tutorial" }
+        ],
+        "certifications": [
+          { "title": "Figma Professional Certification", "provider": "Figma", "url": "https://www.figma.com/certification/", "free": false }
+        ]
+      },
+      {
+        "id": "uiux-5",
+        "title": "Design Systems",
+        "description": "Build and document a scalable design system — tokens, component documentation, governance, and working with engineering.",
+        "order": 5,
+        "estimatedHours": 45,
+        "topics": [
+          "What is a design system and why it matters",
+          "Design tokens: color, typography, spacing, radius",
+          "Component documentation: usage, do/don't, props",
+          "Iconography — consistent icon sets and sizing",
+          "Motion design: duration, easing, and principles",
+          "Storybook for design-dev alignment",
+          "Design system versioning and contribution model"
+        ],
+        "projects": [
+          { "title": "Personal Design System", "description": "Build a complete Figma design system with 30+ components, token documentation, and a usage guide page." },
+          { "title": "Design System Audit", "description": "Audit an existing open-source design system (e.g., Material Design, Radix) and write a review of its strengths and gaps." }
+        ],
+        "resources": [
+          { "title": "design.systems", "url": "https://www.design.systems/", "type": "documentation" },
+          { "title": "Radix UI Design System", "url": "https://www.radix-ui.com/", "type": "tool" },
+          { "title": "Storybook Documentation", "url": "https://storybook.js.org/docs/get-started/", "type": "documentation" }
+        ]
+      },
+      {
+        "id": "uiux-6",
+        "title": "Portfolio & Career",
+        "description": "Curate a compelling UX portfolio, nail design interviews, and position yourself for your first design role.",
+        "order": 6,
+        "estimatedHours": 30,
+        "topics": [
+          "Structuring a UX case study: problem, process, outcome",
+          "Choosing 3-4 projects that show range",
+          "Writing clear, concise design rationale",
+          "Portfolio site options: Notion, Webflow, Framer",
+          "Design interview prep: whiteboard challenges",
+          "Portfolio critique and feedback loops",
+          "Networking: Dribbble, LinkedIn, design communities"
+        ],
+        "projects": [
+          { "title": "Full Case Study", "description": "Document one complete project from research to final design as a written case study — include process, decisions, and measurable outcomes." },
+          { "title": "Portfolio Website", "description": "Launch a personal portfolio site with 3 case studies, an about page, and a contact form — optimize for mobile." }
+        ],
+        "resources": [
+          { "title": "Bestfolios — Portfolio Inspiration", "url": "https://www.bestfolios.com/", "type": "tool" },
+          { "title": "UX Portfolio Formula (book)", "url": "https://www.uxportfolioformula.com/", "type": "book" },
+          { "title": "Framer (portfolio builder)", "url": "https://www.framer.com/", "type": "tool" }
+        ]
+      }
+    ]
   }
 ]
