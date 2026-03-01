@@ -42,7 +42,7 @@ export default function RoadmapDetail() {
       ? api.get(`/progress/${id}`)
       : Promise.resolve({ data: { completedStages: [] } });
     const notesReq = user
-      ? api.get(`/notes/${id}`)
+      ? api.get(`/notes/${id}`).catch(() => ({ data: {} }))
       : Promise.resolve({ data: {} });
 
     Promise.all([api.get(`/roadmaps/${id}`), progressReq, notesReq])
